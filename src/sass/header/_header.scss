@@ -16,16 +16,16 @@
   }
 }
 
-.navigation-list {
+.navigation__list {
   list-style: none;
   display: flex;
 }
 
-.navigation-item + .navigation-item {
+.navigation__item + .navigation__item {
   margin-left: 50px;
 }
 
-.navigation-link {
+.navigation__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
