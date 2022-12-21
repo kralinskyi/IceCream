@@ -1,0 +1,5 @@
+// * Щоб добавити міксін - пишемо @include transition() - за замовчуванням значення "color" - якщо інше - указуємо в дужках.
+
+@mixin transition($property: color) {
+  transition: $property 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
