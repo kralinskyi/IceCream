@@ -1,22 +1,26 @@
-// !button bg colors
+// button bg colors
 $button-default: #f8d24e;
 $button-hover: #0a8817;
 $button-disabled: #ababab;
 //
-
+// main colors
 $main-color: #84a178;
 $white-color: #fcfcfc;
 $dark-color: #131313;
 $black-color: #000000;
 //
+//
 $product1-color: #aec6a5;
 $product2-color: #efd478;
 $product3-color: #d6936d;
 //
+//
 $ingredient-color: #9cbe8f;
 //
+// form > input color
 $input-color: rgba(248, 210, 78, 0.1);
 //
+// Product background colors and shadows
 $cream: linear-gradient(
     0deg,
     rgba(156, 190, 143, 0.7),
@@ -26,11 +30,15 @@ $cream: linear-gradient(
 $cream-modal-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 $cream-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
 //
+//
 $coffe: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
   #d9d9d9;
 $coffe-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+//
 //
 $shake: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)),
   #d9d9d9;
 $shake-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
 //
+// Footer copyright color
+$copyright-color: #7a7a7a;

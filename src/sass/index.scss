@@ -2,13 +2,16 @@
 // ! Шрифти
 @import url(https://fonts.googleapis.com/css?family=Seymour+One:regular);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900);
-// !Базові налаштування
-@import './base';
+
 // ! Змінні, міксіни, плейсхолдери
 @import './utils/vars';
 @import './utils/mixins';
 @import './utils/placeholders';
+
+// !Базові налаштування
+@import './base';
+
 // ! Partials
-//
+
 @import './header/header';
 @import './header/menu';

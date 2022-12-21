@@ -42,3 +42,21 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+// Hero - How it`s made --> Mobile
+
+.hero-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25; /* 15/12 */
+  text-decoration-line: underline;
+}
+
+.button {
+  margin: 0 auto;
+  padding: 11px 26px;
+  min-width: 108px;
+  border: none;
+
+  color: $black-color;
+}
