@@ -4,6 +4,17 @@ body {
   letter-spacing: 0.04em;
 }
 
+.list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .container {
   width: 100%;
   padding: 0 16px;
