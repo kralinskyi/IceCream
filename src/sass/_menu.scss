@@ -71,3 +71,59 @@
 .currentPage-burger {
   color: #131313;
 }
+
+.menu-btn {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 36px;
+  margin: 0 auto;
+
+  max-width: 152px;
+
+  color: #000000;
+  background-color: #f8d24e;
+
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.214;
+
+  text-decoration: none;
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: #000000;
+    background-color: #0a8817;
+    outline: none;
+  }
+
+  &:hover .btn-arrow-svg {
+    fill: #000000;
+  }
+
+  &:focus {
+    color: white;
+    background-color: #0a8817;
+    outline: none;
+  }
+
+  &:focus .btn-arrow-svg {
+    fill: white;
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.btn-arrow-svg {
+  margin-left: 4px;
+  fill: #000000;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
