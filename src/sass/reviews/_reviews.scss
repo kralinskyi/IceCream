@@ -59,3 +59,63 @@
     margin-right: auto;
     margin-bottom: 32px;
 }
+
+.reviews__comment{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.58;
+
+    text-align: center;
+
+    color: #FCFCFC;
+
+    @media screen and (min-width: 768px){
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        font-size: 14px;
+        line-height: 1.85;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        line-height: 1.87;
+    }
+}
+
+.reviews__name{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.85;
+
+    text-align: center;
+
+    color: #131313;
+
+    @media screen and (min-width: 768px){
+        font-size: 16px;
+        line-height: 1.87;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
