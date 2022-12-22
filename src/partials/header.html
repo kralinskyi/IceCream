@@ -6,12 +6,30 @@
         <source
           media="(min-width: 1200px)"
           srcset="
+            ./images/header/logo-desktop.webp    1x,
+            ./images/header/logo-desktop@2x.webp 2x,
+            ./images/header/logo-desktop@3x.webp 3x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="
             ./images/header/logo-desktop.png    1x,
             ./images/header/logo-desktop@2x.png 2x,
             ./images/header/logo-desktop@3x.png 3x
           "
         />
         <!-- Tablet -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/header/logo-tablet.webp    1x,
+            ./images/header/logo-tablet@2x.webp 2x,
+            ./images/header/logo-tablet@3x.webp 3x
+          "
+          type="image/webp"
+        />
         <source
           media="(min-width: 768px)"
           srcset="
@@ -24,12 +42,21 @@
         <source
           media="(max-width: 767px)"
           srcset="
+            ./images/header/logo.webp    1x,
+            ./images/header/logo@2x.webp 2x,
+            ./images/header/logo@3x.webp 3x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
             ./images/header/logo.png    1x,
             ./images/header/logo@2x.png 2x,
             ./images/header/logo@3x.png 3x
           "
         />
-        <img src="./images/header/logo.png" alt="Лого" />
+        <img class="logo__img" src="./images/header/logo.png" alt="Лого" />
       </picture>
     </a>
     <nav class="navigation">
@@ -38,13 +65,13 @@
           <a href="./index.html" class="navigation__link">Home</a>
         </li>
         <li class="navigation__item">
-          <a href="./index.html" class="navigation__link">How it's made?</a>
+          <a href="#about" class="navigation__link">How it's made?</a>
         </li>
         <li class="navigation__item">
-          <a href="./index.html" class="navigation__link">Our products</a>
+          <a href="#products" class="navigation__link">Our products</a>
         </li>
         <li class="navigation__item">
-          <a href="./index.html" class="navigation__link">Contacts</a>
+          <a href="#contacts" class="navigation__link">Contacts</a>
         </li>
       </ul>
     </nav>
@@ -74,12 +101,30 @@
         <source
           media="(min-width: 768px)"
           srcset="
+            ./images/header/logo-tablet.webp    1x,
+            ./images/header/logo-tablet@2x.webp 2x,
+            ./images/header/logo-tablet@3x.webp 3x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
             ./images/header/logo-tablet.png    1x,
             ./images/header/logo-tablet@2x.png 2x,
             ./images/header/logo-tablet@3x.png 3x
           "
         />
         <!-- Phone -->
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/header/logo.webp    1x,
+            ./images/header/logo@2x.webp 2x,
+            ./images/header/logo@3x.webp 3x
+          "
+          type="image/webp"
+        />
         <source
           media="(max-width: 767px)"
           srcset="

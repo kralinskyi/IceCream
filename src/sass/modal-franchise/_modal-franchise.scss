@@ -1,136 +1,94 @@
 /* ---------MODAL WINDOW-------- */
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  opacity: 1;
-  transition: opacity 250ms var(--cubic);
-}
 
 .modal-franchise {
-  position: absolute;
-  box-sizing: border-box;
-  top: 50%;
-  left: 50%;
-  width: 568px;
-  height: 668px;
-  background: #fcfcfc;
-  border: 2px solid #f8d24e;
-  border-radius: 10px;
-  padding: 32px 60px;
-  //   transform: translate(-50%, -50%) scale(1);
-
-  //   transition: transform 250ms var(--cubic);
+  height: 674px;
 }
 
-// .backdrop.is-hidden .modal-franchise {
-//   transform: translate(-50%, -50%) scale(0.9);
-// }
-
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-.modal-franchise__title {
-  margin: auto;
-  margin-bottom: 24px;
-  width: 322px;
-  font-family: 'Seymour One';
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  align-items: center;
-  text-align: center;
-  color: #131313;
-}
 .modal-franchise__descr {
   margin: auto;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   font-family: 'Montserrat';
-  font-size: 16px;
-  line-height: 22px;
-  letter-spacing: -0.005em;
-  color: #131313;
+  font-size: 14px;
+  line-height: 1.42;
+  letter-spacing: 0em;
+  color: $dark-color;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.37;
+    letter-spacing: -0.005em;
+    margin-bottom: 32px;
+  }
 }
 
 /* ------ Form data ----- */
 .modal-franchise__form {
-  width: 368px;
+  width: 224px;
   margin: auto;
-  font-size: 14px;
-  line-height: 20px;
-  //   letter-spacing: 0.01em;
-  color: #131313;
+  font-size: 12px;
+  line-height: 1.41;
+  letter-spacing: 0em;
+  color: $dark-color;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.42;
+    width: 368px;
+  }
 }
 .modal-franchise__input {
   width: 100%;
-  padding: 11px 16px;
-  border: 1px solid #84a178;
+  padding: 8px 12px;
+  border: 1px solid $main-color;
   border-radius: 10px;
-  background: rgba(248, 210, 78, 0.1);
-  margin-bottom: 16px;
+  background: $input-color;
+  margin-bottom: 12px;
   outline: 1px solid transparent;
   @include transition();
+  @media screen and (min-width: 768px) {
+    padding: 11px 16px;
+    margin-bottom: 16px;
+  }
 }
 .modal-franchise__input.modal-franchise__textarea {
-  margin-bottom: 32px;
+  margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
 }
 .modal-franchise__textarea {
   display: block;
   resize: none;
 }
-.modal-franchise__btn {
+.modal__btn {
   padding: 12px 34px;
   margin: auto;
-  //   width: 121px;
   height: 42px;
-  background: #f8d24e;
+  background-color: $button-default;
   border-radius: 10px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 12px;
+  line-height: 1.25;
   display: flex;
   align-items: center;
   text-align: center;
   border: none;
   @include transition();
+  @include transition(background-color);
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.21;
+  }
 }
 .modal-franchise__input:focus-within,
 .modal-franchise__input:hover {
-  border: 1px solid #0a8817;
+  border: 1px solid $button-hover;
 }
-.modal-franchise__btn:hover,
-.modal-franchise__btn:focus {
-  background: #0a8817;
-  color: #fcfcfc;
-}
-/* ----Button close of mobal -----*/
-.modal__btn-close {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  padding: 0;
-  width: 24px;
-  height: 24px;
-  color: #131313;
-  background-color: inherit;
-  border: none;
-
-  @include transition();
+.modal__btn:focus {
+  background: $button-hover;
+  color: $white-color;
 }
-.modal__btn-close :hover,
-.modal__btn-close :focus {
-  color: #0a8817;
-}
-.close-icon {
-  fill: currentColor;
+.modal__btn:hover {
+  background: $button-hover;
 }
