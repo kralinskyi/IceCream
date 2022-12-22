@@ -1,118 +1,129 @@
 .contacts {
-    width: 100%;
+  width: 100%;
 }
 
 .card-set {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 
-    @media screen and (min-width:768px) {
-        flex-direction: row;
-    }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 
 .card-set__item {
-    flex-basis: calc((100% - 64px) / 3);
+  flex-basis: calc((100% - 64px) / 3);
 }
-
 
 .contacts__list {
-    font-weight: 500;
-    font-size: 12px;
+  font-weight: 500;
+  font-size: 12px;
 
-    @media screen and (min-width: 768px) {
-        font-size: 14px;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 
-    @media screen and (min-width: 1200px) {
-        font-size: 16px;
-    }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
-
 .contacts__category {
-    display: inline-block;
-    color: $dark-color;
-    line-height: calc(14/12);
-    text-transform: uppercase;
+  display: inline-block;
+  color: $dark-color;
+  line-height: calc(14 / 12);
+  text-transform: uppercase;
 
-    background-color: $button-default;
-    border-radius: 6px;
+  background-color: $button-default;
+  border-radius: 6px;
 
-    padding: 4px 14px;
-    margin-top: 0;
-    margin-bottom: 20px;
+  padding: 4px 14px;
+  margin-top: 0;
+  margin-bottom: 20px;
 
-    @media screen and (min-width: 768px) {
-        font-size: 16px;
-        margin-bottom: 32px;
-        line-height: calc(22/16);
-    }
-
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    margin-bottom: 32px;
+    line-height: calc(22 / 16);
+  }
 }
 
 .contacts__group {
-    // display: flex;
-    // flex-direction: column;
-    background-color: #FFFFFF;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
-    padding: 40px;
-    // gap: 32px;
+  // display: flex;
+  // flex-direction: column;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  padding: 40px;
+  // gap: 32px;
 }
 
-
-
 .contacts__address {
-    text-decoration: none;
-    font-style: normal;
-    line-height: calc(22/12);
-    margin-bottom: 32px;
+  text-decoration: none;
+  font-style: normal;
+  line-height: calc(22 / 12);
+  margin-bottom: 32px;
 
-    &--link {
-        display: flex;
-        color: $product3-color;
-        line-height: calc(22/12);
+  &--link {
+    display: flex;
+    color: $product3-color;
+    line-height: calc(22 / 12);
 
-        &:hover,
-        &:focus {
-            text-decoration: underline;
-        }
-
+    &:hover,
+    &:focus {
+      text-decoration: underline;
     }
+  }
 }
 
 .contacts__schedule {
-    line-height: calc(22/12);
-    padding-top: 24px;
-    padding-bottom: 24px;
-    margin-bottom: 24px;
-    border-top: 1px solid #E1E1E1;
-    border-bottom: 1px solid #E1E1E1;
+  line-height: calc(22 / 12);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
 
-    @media screen and (min-width: 768px) {
-        padding-top: 32px;
-        padding-bottom: 32px;
-        margin-bottom: 32px;
-    }
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
 }
 
 .contacts__hours {
-    color: $button-disabled;
+  color: $button-disabled;
 }
 
 .contacts__item {
-    line-height: calc(19/12);
+  line-height: calc(19 / 12);
 
-    @media screen and (min-width: 768px) {
-        line-height: calc(21/14);
-    }
-
+  @media screen and (min-width: 768px) {
+    line-height: calc(21 / 14);
+  }
 }
 
 .contacts__link {
-    text-decoration: none;
-    font-style: normal;
-    color: $dark-color;
+  text-decoration: none;
+  font-style: normal;
+  color: $dark-color;
+}
+
+// Добавил стили наугад
+
+.button__contacts {
+  max-width: 152px;
+  cursor: pointer;
+  background-color: #f8d24e;
+  border-radius: 10px;
+  align-items: center;
+  padding: 12px 36px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.214;
+  text-decoration: none;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
 }
