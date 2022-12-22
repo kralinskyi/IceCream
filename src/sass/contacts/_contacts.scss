@@ -24,7 +24,7 @@
     @media screen and (min-width: 768px) {
         font-size: 14px;
     }
-    
+
     @media screen and (min-width: 1200px) {
         font-size: 16px;
     }
@@ -42,11 +42,13 @@
 
     padding: 4px 14px;
     margin-top: 0;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
 
     @media screen and (min-width: 768px) {
         font-size: 16px;
+        margin-bottom: 32px;
     }
+
 }
 
 .contacts__group {
@@ -57,7 +59,7 @@
     border-radius: 24px;
     padding: 40px;
     // gap: 32px;
-    }
+}
 
 
 
@@ -74,7 +76,7 @@
 
         &:hover,
         &:focus {
-           text-decoration: underline; 
+            text-decoration: underline;
         }
 
     }
@@ -82,7 +84,17 @@
 
 .contacts__schedule {
     line-height: calc(30/16);
-    margin-bottom: 32px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-top: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+    }
 }
 
 .contacts__hours {
@@ -91,7 +103,7 @@
 
 .contacts__item {
     line-height: calc(24/16);
-    
+
 }
 
 .contacts__link {
