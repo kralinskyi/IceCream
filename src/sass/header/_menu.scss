@@ -48,7 +48,7 @@
   }
 }
 
-.burger-menu-link {
+.burger-menu__link {
   display: block;
   font-weight: 500;
   font-size: 40px;
@@ -62,7 +62,7 @@
   }
 }
 
-.burger-menu-item {
+.burger-menu__item {
   &:not(:last-child) {
     margin-bottom: 32px;
   }
