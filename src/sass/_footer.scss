@@ -22,89 +22,98 @@
   }
 }
 
+.common-footer {
+  @media screen and (min-width: 768px) {
+    position: relative;
+  }
+}
+
+.footer-title {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: -60px;
+    padding-left: 33px;
+    margin-left: 33px;
+  }
+  @media screen and (min-width: 1199px) {
+    position: absolute;
+    top: -20px;
+    padding-left: 16px;
+    margin-left: 16px;
+  }
+}
 .footer-title__first {
+  text-transform: uppercase;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fcfcfc;
   @media screen and (max-width: 767px) {
     max-width: 300px;
     padding-left: 22px;
-    text-transform: uppercase;
+    margin-bottom: 16px;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.22;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #fcfcfc;
   }
   @media screen and (max-width: 1199px) {
     max-width: 400px;
     padding-left: 33px;
-    text-transform: uppercase;
+    margin-bottom: 8px;
     font-size: 26px;
     font-weight: 700;
     line-height: 1.21;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #fcfcfc;
   }
   @media screen and (min-width: 1200px) {
     max-width: 500px;
     padding-left: 16px;
-    text-transform: uppercase;
     font-size: 30px;
     font-weight: 400;
     line-height: 1.23;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #fcfcfc;
     margin-bottom: 14px;
   }
 }
 .footer-title__second {
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-align: left;
+  text-transform: uppercase;
+  color: #fcfcfc;
   @media screen and (max-width: 767px) {
     max-width: 200px;
     padding-left: 22px;
     font-size: 34px;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: 0.04em;
-    text-align: left;
-    text-transform: uppercase;
-    color: #fcfcfc;
   }
   @media screen and (max-width: 1199px) {
-    max-width: 500px;
+    margin-top: 0;
+    max-width: 352px;
     padding-left: 33px;
     font-size: 48px;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: 0.04em;
-    text-align: left;
-    text-transform: uppercase;
-    color: #fcfcfc;
   }
   @media screen and (min-width: 1200px) {
     max-width: 504px;
     padding-left: 16px;
     font-size: 58px;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: 0.04em;
-    text-align: left;
-    text-transform: uppercase;
-    color: #fcfcfc;
     margin-top: 0;
   }
 }
+
 .social-footer {
   @media screen and (max-width: 767px) {
     display: flex;
     gap: 20px;
     justify-content: right;
+    margin-bottom: 20px;
   }
 
   @media screen and (max-width: 1199px) {
     display: flex;
     gap: 30px;
     justify-content: right;
+    margin-bottom: 34px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -117,9 +126,11 @@
 .footer-contacts {
   @media screen and (max-width: 767px) {
     text-align: right;
+    margin-bottom: 40px;
   }
   @media screen and (max-width: 1199px) {
     text-align: right;
+    margin-bottom: 60px;
   }
   @media screen and (min-width: 1200px) {
     text-align: right;
@@ -128,94 +139,59 @@
 }
 
 .footer-adress__accent {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 186%;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #131313;
   @media screen and (max-width: 767px) {
-    font-family: Montserrat;
-    font-style: normal;
     font-size: 12px;
-    font-weight: 700;
-    line-height: 186%;
-    letter-spacing: 0em;
-    text-align: right;
-    color: #131313;
   }
   @media screen and (max-width: 1199px) {
-    font-family: Montserrat;
-    font-style: normal;
     font-size: 14px;
-    font-weight: 700;
-    line-height: 186%;
-    letter-spacing: 0em;
-    text-align: right;
-    color: #131313;
   }
   @media screen and (min-width: 1200px) {
-    font-family: Montserrat;
-    font-style: normal;
     font-size: 16px;
-    font-weight: 700;
-    line-height: 186%;
-    letter-spacing: 0em;
-    text-align: right;
-    color: #131313;
   }
 }
 .footer-adress__tel {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 186%;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #fcfcfc;
+
   @media screen and (max-width: 767px) {
-    font-family: Montserrat;
-    font-style: normal;
     font-size: 12px;
-    font-weight: 700;
-    line-height: 186%;
-    letter-spacing: 0em;
-    text-align: right;
-    color: #fcfcfc;
   }
   @media screen and (max-width: 1199px) {
-    font-family: Montserrat;
-    font-style: normal;
     font-size: 14px;
-    font-weight: 700;
-    line-height: 186%;
-    letter-spacing: 0em;
-    text-align: right;
-    color: #fcfcfc;
   }
   @media screen and (min-width: 1200px) {
-    font-family: Montserrat;
-    font-style: normal;
     font-size: 16px;
-    font-weight: 700;
-    line-height: 186%;
-    letter-spacing: 0em;
-    text-align: right;
-    color: #fcfcfc;
   }
 }
 
 .rights {
-  @media screen and (max-width: 767) {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #ececec;
+  @media screen and (max-width: 767px) {
     text-align: center;
     display: flex;
     flex-direction: column;
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color: #ececec;
+    padding-top: 20px;
   }
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     text-align: center;
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color: #ececec;
-  }
-  @media screen and (min-width: 1200) {
-    text-align: center;
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color: #ececec;
     padding-top: 12px;
-    padding-bottom: 12px;
   }
 }
+
 .rights__owner {
   font-family: Montserrat;
   font-style: normal;
