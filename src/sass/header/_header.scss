@@ -26,6 +26,12 @@
   }
 }
 
+.logo__img {
+  @media screen and (min-width: 1200px) {
+    margin-top: -15px;
+  }
+}
+
 .container-nav {
   display: flex;
   align-items: center;
