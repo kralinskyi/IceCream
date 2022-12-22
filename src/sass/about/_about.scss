@@ -19,6 +19,12 @@
   text-transform: uppercase;
 
   color: $white-color;
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+  }
 }
 
 .about__title {
@@ -41,9 +47,11 @@
   }
   @media screen and (min-width: 768px) {
     margin-bottom: 80px;
+    font-size: 34px;
   }
   @media screen and (min-width: 1200px) {
     margin-bottom: 120px;
+    font-size: 36px;
   }
 }
 
