@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" data-header>
   <div class="container container-nav">
     <a href="./index.html" class="logo">
       <picture>
@@ -35,16 +35,16 @@
     <nav class="navigation">
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a class="navigation__link currentPage">Home</a>
+          <a href="./index.html" class="navigation__link">Home</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link">How it's made?</a>
+          <a href="./index.html" class="navigation__link">How it's made?</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link">Our products</a>
+          <a href="./index.html" class="navigation__link">Our products</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link">Contacts</a>
+          <a href="./index.html" class="navigation__link">Contacts</a>
         </li>
       </ul>
     </nav>
@@ -58,32 +58,64 @@
         <use href="./images/header/symbol-defs.svg#icon-burger-menu"></use>
       </svg>
     </button>
+
+    <button class="button menu-btn header__btn" type="button" data-modal-open>
+      Buy now<svg class="btn-arrow-svg" width="12" height="12">
+        <use href="./images/header/symbol-defs.svg#icon-btn-arrow"></use>
+      </svg>
+    </button>
   </div>
 
   <!-- Burger menu -->
   <div class="menu-container js-menu-container" id="mobile-menu">
+    <a href="./index.html" class="logo burger-menu__logo">
+      <picture>
+        <!-- Tablet -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/header/logo-tablet.png    1x,
+            ./images/header/logo-tablet@2x.png 2x,
+            ./images/header/logo-tablet@3x.png 3x
+          "
+        />
+        <!-- Phone -->
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/header/logo.png    1x,
+            ./images/header/logo@2x.png 2x,
+            ./images/header/logo@3x.png 3x
+          "
+        />
+        <img src="./images/header/logo.png" alt="Лого" />
+      </picture>
+    </a>
     <button class="menu-toggle js-close-menu">
       <svg class="menu-close-icon" width="32" height="32">
         <use href="./images/header/symbol-defs.svg#icon-burger-close"></use>
       </svg>
     </button>
-
-    <ul class="mobile-menu">
-      <li class="mobile-menu__item">
-        <a class="mobile-menu__link currentPage-burger">Home</a>
+    <ul class="burger-menu__list">
+      <li class="burger-menu__item">
+        <a href="./index.html" class="burger-menu__link">Home</a>
       </li>
-      <li class="mobile-menu__item">
-        <a class="mobile-menu__link">How it's made?</a>
+      <li class="burger-menu__item">
+        <a href="./index.html" class="burger-menu__link">How it's made?</a>
       </li>
-      <li class="mobile-menu__item">
-        <a class="mobile-menu__link">Our products</a>
+      <li class="burger-menu__item">
+        <a href="./index.html" class="burger-menu__link">Our products</a>
       </li>
-      <li class="mobile-menu__item">
-        <a class="mobile-menu__link">Contacts</a>
+      <li class="burger-menu__item">
+        <a href="./index.html" class="burger-menu__link">Contacts</a>
       </li>
     </ul>
 
-    <button class="btn menu-btn" type="button" data-modal-open>
+    <button
+      class="button menu-btn burger-menu__btn"
+      type="button"
+      data-modal-open
+    >
       Buy now<svg class="btn-arrow-svg" width="12" height="12">
         <use href="./images/header/symbol-defs.svg#icon-btn-arrow"></use>
       </svg>

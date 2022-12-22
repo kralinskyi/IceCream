@@ -8,12 +8,13 @@
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
-  background-color: #84a178;
-  z-index: 999;
+  background-color: $main-color;
+  z-index: 9999;
   overflow-y: scroll;
 
   transform: translateX(200%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include transition(transform);
 }
 
 .menu-container.is-open {
@@ -23,7 +24,11 @@
 .menu-container .menu-toggle {
   position: absolute;
   top: 16px;
-  right: 18px;
+  right: 20px;
+  @media (min-width: 768px) {
+    top: 32px;
+    right: 32px;
+  }
 }
 
 .menu-toggle {
@@ -32,98 +37,62 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  margin: 0;
+  margin-left: auto;
   padding: 0;
-  fill: white;
+  fill: $white-color;
   background-color: transparent;
   cursor: pointer;
   border: none;
   border-radius: 50%;
   outline: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition();
 
   @media (min-width: 1200px) {
     display: none;
   }
 }
 
+
+.burger-menu__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 51px;
+  @media (min-width: 768px) {
+    margin-top: 76px;
+    }
+
 .burger-menu__link {
   display: block;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color: white;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.219;
+  color: $white-color;
+
+  @media (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.23;
+  }
 
   &:hover,
   &:focus {
-    color: #131313;
+    color: $dark-color;
   }
 }
 
 .burger-menu__item {
-  &:not(:last-child) {
-    margin-bottom: 32px;
-  }
-}
-
-.currentPage-burger {
-  color: #131313;
-}
-
-.menu-btn {
-  display: inline-flex;
-  align-items: center;
-  border: none;
-  border-radius: 10px;
-  padding: 12px 36px;
-  margin: 0 auto;
-
-  max-width: 152px;
-
-  color: #000000;
-  background-color: #f8d24e;
-
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.214;
-
-  text-decoration: none;
-  cursor: pointer;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover {
-    color: #000000;
-    background-color: #0a8817;
-    outline: none;
-  }
-
-  &:hover .btn-arrow-svg {
-    fill: #000000;
-  }
-
-  &:focus {
-    color: white;
-    background-color: #0a8817;
-    outline: none;
-  }
-
-  &:focus .btn-arrow-svg {
-    fill: white;
-  }
-
+  margin-bottom: 32px;
   @media (min-width: 768px) {
-    display: none;
+    margin-bottom: 40px;
   }
 }
 
-.btn-arrow-svg {
-  margin-left: 4px;
-  fill: #000000;
-
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.burger-menu__logo {
+  position: absolute;
+  top: 12px;
+  left: 18px;
+  @media (min-width: 768px) {
+    top: 20px;
+    left: 32px;
+  }
 }
