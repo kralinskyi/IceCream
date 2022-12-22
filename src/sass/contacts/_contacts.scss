@@ -2,15 +2,19 @@
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
+
+    @media screen and (min-width:768px) {
+        flex-wrap: nowrap;
+    }
 }
 
 .card-set__item {
-    flex-basis: calc((100% - 32px * 2) / 3);
+    flex-basis: calc((100% - 64px) / 3);
 }
+
 
 .contacts__list {
     font-weight: 500;
-    
 }
 
 
@@ -47,6 +51,7 @@
     margin-bottom: 32px;
 
     &--link {
+        display: flex;
         color: $product3-color;
         line-height: calc(29/16);
     }
