@@ -6,42 +6,43 @@
     background-position: center;
     background-size: cover;
     // Mobile screen
-    background-image: url(../images/background/bg-img_s@1x.jpg);
+    background-image: url(../images/products/bg_sm@1x.jpg);
 
     // retina mobile screen
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(../images/background/bg-img_s@2x.jpg);
+        background-image: url(../images/products/bg_sm@2x.jpg);
     }
 
     // Tablet screen
     @media screen and (min-width: 481px) {
-        background-image: url(../images/background/bg-img_m@1x.jpg);
+        background-image: url(../images/products/bg_md@1x.jpg);
 
         // retina tablet screen
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(../images/background/bg-img_m@2x.jpg);
+            background-image: url(../images/products/bg_md@2x.jpg);
         }
     }
 
     // Desktop screen
     @media screen and (min-width: 769px) {
-        background-image: url(../images/background/bg-img_l@1x.jpg);
+        background-image: url(../images/products/bg_lg@1x.jpg);
 
         // retina desktop screen
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(../images/background/bg-img_l@2x.jpg);
+            background-image: url(../images/products/bg_lg@2x.jpg);
         }
     }
 }
 
 .swiper {
     width: 100%;
+
 }
 
 .swiper__background {
@@ -52,6 +53,10 @@
 
 .swiper-pagination-bullet-active {
     background-color: #84A178;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+    bottom: 0;
 }
 
 .reviews__avatar{
