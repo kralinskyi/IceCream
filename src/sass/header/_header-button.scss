@@ -1,0 +1,62 @@
+.menu-btn {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 12px 36px;
+  max-width: 152px;
+
+  background-color: $button-default;
+
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.214;
+
+  text-decoration: none;
+  cursor: pointer;
+
+  @include transition(background-color);
+  @include transition();
+
+  &:hover {
+    color: $black-color;
+    background-color: $button-hover;
+    outline: none;
+  }
+
+  &:hover .btn-arrow-svg {
+    fill: $black-color;
+  }
+
+  &:focus {
+    color: $white-color;
+    background-color: $button-hover;
+    outline: none;
+  }
+
+  &:focus .btn-arrow-svg {
+    fill: $white-color;
+  }
+}
+
+.btn-arrow-svg {
+  margin-left: 4px;
+  fill: $black-color;
+
+  @include transition(fill);
+}
+
+.menu-btn.header__btn {
+  margin-left: 32px;
+  margin-right: 0;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.menu-btn.burger-menu__btn {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
