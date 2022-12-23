@@ -5,14 +5,9 @@
       <use href="./images/modal-franchise/modal-franchise.svg#icon-close"></use>
     </svg>
   </button>
-      <!-- <button class="modal-products-button" data-modal-close>
-        <svg width="20" height="20">
-          <use href="./images/icons.svg#icon-modal-products-close"></use>
-        </svg>
-      </button> -->
-      <strong class="modal__title"
-        >Chololate<span></span>icecream</strong
-      >
+    
+       <h2 class="modal__title">Chololate icecream</h2>
+   
       <img
         class="modal-products-img"
         srcset="
@@ -43,17 +38,135 @@
       </ul>
       <form name="modal-products_form" class="modal-products-form-group">
         <label>
-          <input class="modal-products-form-field" placeholder="Name" name="user_name" type="text" />
+          <input class="modal-products-form-field" placeholder="Name" name="user_name" type="text" required/>
         </label>
         <label>
-          <input class="modal-products-form-field" placeholder="Phone" name="user_tel" type="tel" />
+          <input class="modal-products-form-field" placeholder="Phone" name="user_tel" type="tel" required/>
         </label>
         </label>
         <label>
           <textarea
             class="modal-products-form-field modal-products-form-message"
             placeholder="Comment"
-            rows="7"
+            rows="7" required
+          ></textarea>
+        </label>
+        <button class="modal-products-form-button" type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
+
+    <!----------- coffee ------------>
+    <div class="modal-products modal" data-modal="3">
+      <button modal-close type="button" class="modal__btn-close js-modal-close">
+    <svg class="close-icon" width="24" height="24">
+      <use href="./images/modal-franchise/modal-franchise.svg#icon-close"></use>
+    </svg>
+  </button>
+    
+       <h2 class="modal__title">Chololate icecoffee</h2>
+     
+      <img
+        class="modal-products-img"
+        srcset="
+          ./images/modal-products/сhololate_icecream@1x.jpg 1x,
+          ./images/modal-products/сhololate_icecream@2x.jpg 2x
+          "
+        src="./images/modal-products/сhololate_icecream@1x.jpg"
+        width="132"
+        height="132"
+        alt="Chololate icecream"
+      />
+      <ul class="modal-products-listzero list">
+        <li class="modal-products-itemzero"><span class="modal-products-itemzero-text">300</span><span class="modal-products-itemzero-text--size">kcal</span></li>
+        <li class="modal-products-itemzero"><span class="modal-products-itemzero-text">6g</span><span class="modal-products-itemzero-text--size">Prote...</span></li>
+        <li class="modal-products-itemzero"><span class="modal-products-itemzero-text">9,2g</span><span class="modal-products-itemzero-text--size">Fats</span></li>
+        <li class="modal-products-itemzero"><span class="modal-products-itemzero-text">42,5g</span><span class="modal-products-itemzero-text--size">Carbs</span></li>
+      </ul>
+      <strong class="modal-products-text"
+        >Ingredients</strong
+      >
+      <ul class="modal-products-list list">
+        <li class="modal-products-item">Milk<span></span>70ml</li>
+        <li class="modal-products-item">Belgian chocolate<span></span>30g</li>
+        <li class="modal-products-item">Coffe<span></span>50ml</li>
+        <li class="modal-products-item">Cocoa powder<span></span>30g</li>
+        <li class="modal-products-item">Sugar<span></span>5g</li>
+        <li class="modal-products-item">Vanilla sugar<span></span>10g</li>
+      </ul>
+      <form name="modal-products_form" class="modal-products-form-group">
+        <label>
+          <input class="modal-products-form-field" placeholder="Name" name="user_name" type="text" required />
+        </label>
+        <label>
+          <input class="modal-products-form-field" placeholder="Phone" name="user_tel" type="tel" required/>
+        </label>
+        </label>
+        <label>
+          <textarea
+            class="modal-products-form-field modal-products-form-message"
+            placeholder="Comment"
+            rows="7" required
+          ></textarea>
+        </label>
+        <button class="modal-products-form-button" type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
+
+     <!----------- MILKSHAKES ------------>
+    <div class="modal-products modal" data-modal="4">
+      <button modal-close type="button" class="modal__btn-close js-modal-close">
+    <svg class="close-icon" width="24" height="24">
+      <use href="./images/modal-franchise/modal-franchise.svg#icon-close"></use>
+    </svg>
+  </button>
+    
+       <h2 class="modal__title">Milkshakes</h2>
+     
+      <img
+        class="modal-products-img"
+        srcset="
+          ./images/modal-products/сhololate_icecream@1x.jpg 1x,
+          ./images/modal-products/сhololate_icecream@2x.jpg 2x
+          "
+        src="./images/modal-products/сhololate_icecream@1x.jpg"
+        width="132"
+        height="132"
+        alt="Chololate icecream"
+      />
+      <ul class="modal-products-listzero list">
+        <li class="modal-products-itemzero"><span class="modal-products-itemzero-text">300</span><span class="modal-products-itemzero-text--size">kcal</span></li>
+        <li class="modal-products-itemzero"><span class="modal-products-itemzero-text">6g</span><span class="modal-products-itemzero-text--size">Prote...</span></li>
+        <li class="modal-products-itemzero"><span class="modal-products-itemzero-text">9,2g</span><span class="modal-products-itemzero-text--size">Fats</span></li>
+        <li class="modal-products-itemzero"><span class="modal-products-itemzero-text">42,5g</span><span class="modal-products-itemzero-text--size">Carbs</span></li>
+      </ul>
+      <strong class="modal-products-text"
+        >Ingredients</strong
+      >
+      <ul class="modal-products-list list">
+        <li class="modal-products-item">Milk<span></span>120ml</li>
+        <li class="modal-products-item">Belgian chocolate<span></span>40g</li>
+        <li class="modal-products-item">Cream<span></span>20ml</li>
+        <li class="modal-products-item">Cocoa powder<span></span>30g</li>
+        <li class="modal-products-item">Sugar<span></span>15g</li>
+        <li class="modal-products-item">Vanilla sugar<span></span>10g</li>
+      </ul>
+      <form name="modal-products_form" class="modal-products-form-group">
+        <label>
+          <input class="modal-products-form-field" placeholder="Name" name="user_name" type="text" required />
+        </label>
+        <label>
+          <input class="modal-products-form-field" placeholder="Phone" name="user_tel" type="tel" required/>
+        </label>
+        </label>
+        <label>
+          <textarea
+            class="modal-products-form-field modal-products-form-message"
+            placeholder="Comment"
+            rows="7" required
           ></textarea>
         </label>
         <button class="modal-products-form-button" type="submit">
