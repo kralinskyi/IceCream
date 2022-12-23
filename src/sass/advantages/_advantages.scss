@@ -1,5 +1,5 @@
 .advantages {
-  background-color: #84a178;
+  background-color: $main-color;
 }
 
 .advantages__list {
@@ -31,30 +31,29 @@
   @media screen and (max-width: 767px) {
     margin-top: 28px;
   }
-}
-.advantages__item:nth-child(3) {
-  @media screen and (max-width: 767px) {
-    margin-top: 22px;
+  .advantages__item:nth-child(3) {
+    @media screen and (max-width: 767px) {
+      margin-top: 22px;
+    }
   }
 }
 
 .advantages-cart {
   display: flex;
-  align-items: center;
+
   justify-content: center;
 }
 
 .advantages__number {
   // mobil
-  font-family: 'Montserrat';
+
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.22;
   text-align: center;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #fcfcfc;
+  color: $white-color;
   margin-top: 16px;
   margin-bottom: 0;
   // tablet
@@ -62,9 +61,6 @@
     font-size: 48px;
     line-height: 1.23;
     text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #fcfcfc;
     margin-top: 32px;
     margin-bottom: 0;
   }
@@ -74,24 +70,21 @@
     font-weight: 700;
     font-size: 58px;
     line-height: 1.22;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
     margin-top: 40px;
     margin-bottom: 0;
-    color: #fcfcfc;
+    color: $white-color;
   }
 }
 
 .advantages__text {
   // mobil
-  font-family: 'Montserrat';
+
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 170%;
   text-align: center;
-  color: #fcfcfc;
+  color: $white-color;
   margin-top: 16px;
   margin-bottom: 0;
 
@@ -100,8 +93,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 174%;
-    text-align: center;
-    color: #fcfcfc;
+    color: $white-color;
     margin-top: 12px;
     margin-bottom: 0;
   }
@@ -112,7 +104,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 176%;
-    text-align: center;
     letter-spacing: 0.02em;
     color: #fcfcfc;
     margin-top: 12px;
