@@ -2,7 +2,7 @@
   // position: absolute;
   // top: 50%;
   // left: 50%;
-  // transform: translateX(-50%) translateY(-30%);
+  transform: translateX(-50%) translateY(-30%);
   // padding: 28px 20px;
 
   min-height: 968px;
@@ -75,7 +75,7 @@
 //   }
 // }
 
-.modal-products-img {
+/*.modal-products-img {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 29px;
@@ -84,6 +84,38 @@
 
   @media screen and (min-width: 768px) {
     margin-bottom: 31px;
+  }
+}*/
+
+.modal-products-box {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 29px;
+
+  width: 132px;
+  height: 132px;
+
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), $product1-color;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  background-image: url('../images/modal-products/img@1x.png');
+  background-repeat: no-repeat;
+  background-position: 0 -7px;
+  border-radius: 50%;
+
+  &--yellow {
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), $product2-color;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    background-image: url('../images/modal-products/img@1x.png');
+    background-repeat: no-repeat;
+    background-position: 0 -7px;
+  }
+
+  &--red {
+    background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), $product3-color;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    background-image: url('../images/modal-products/img@1x.png');
+    background-repeat: no-repeat;
+    background-position: 0 -7px;
   }
 }
 
@@ -122,6 +154,14 @@
     width: 65px;
     height: 90px;
   }
+
+  &--yellow {
+    border-color: $product2-color;
+  }
+
+  &--red {
+    border-color: $product3-color;
+  }
 }
 
 .modal-products-itemzero-text {
@@ -149,6 +189,16 @@
   line-height: 2.8;
 
   color: $dark-color;
+
+  &--yellow {
+    background-color: $product2-color;
+    border-color: $product2-color;
+  }
+
+  &--red {
+    background-color: $product3-color;
+    border-color: $product3-color;
+  }
 
   &--size {
     font-weight: 400;
@@ -229,6 +279,14 @@
   outline-offset: -1px;
 
   @include transition(outline-color);
+
+  &--yellow {
+    border-color: $product2-color;
+  }
+
+  &--red {
+    border-color: $product3-color;
+  }
 
   &:focus,
   &:hover {
