@@ -1,126 +1,109 @@
-.reviews{
-    padding-top: 100px;
-    padding-bottom: 80px;
-    background: #fff;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    // Mobile screen
-    background-image: url(../images/products/bg_sm@1x.jpg);
+.reviews {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  // Mobile screen
+  background-image: url(../images/products/bg_sm@1x.jpg);
 
-    // retina mobile screen
-    @media (min-device-pixel-ratio: 2),
+  // retina mobile screen
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(../images/products/bg_sm@2x.jpg);
+    background-image: url(../images/products/bg_sm@2x.jpg);
+  }
+
+  // Tablet screen
+  @media screen and (min-width: 481px) {
+    background-image: url(../images/products/bg_md@1x.jpg);
+
+    // retina tablet screen
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/bg_md@2x.jpg);
     }
+  }
 
-    // Tablet screen
-    @media screen and (min-width: 481px) {
-        background-image: url(../images/products/bg_md@1x.jpg);
+  // Desktop screen
+  @media screen and (min-width: 769px) {
+    background-image: url(../images/products/bg_lg@1x.jpg);
 
-        // retina tablet screen
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/products/bg_md@2x.jpg);
-        }
+    // retina desktop screen
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/bg_lg@2x.jpg);
     }
-
-    // Desktop screen
-    @media screen and (min-width: 769px) {
-        background-image: url(../images/products/bg_lg@1x.jpg);
-
-        // retina desktop screen
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/products/bg_lg@2x.jpg);
-        }
-    }
+  }
 }
 
 .swiper {
-    width: 100%;
-
+  width: 100%;
 }
 
 .swiper__background {
-    background-color: #84A178;
-    padding: 43px 109px;
-    border-radius: 24px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+
+  background-color: #84a178;
+  padding: 35px 39px;
+  border-radius: 24px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 964px;
+    padding: 42px 74px;
+  }
 }
 
 .swiper-pagination-bullet-active {
-    background-color: #84A178;
+  background-color: #84a178;
 }
 
-.swiper-pagination-bullets.swiper-pagination-horizontal{
-    bottom: 0;
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
 }
 
-.reviews__avatar{
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 32px;
+.reviews__avatar {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
 }
 
-.reviews__comment{
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 2.58;
+.reviews__comment {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2.58;
 
-    text-align: center;
+  text-align: center;
 
-    color: #FCFCFC;
+  color: #fcfcfc;
 
-    @media screen and (min-width: 768px){
-        font-weight: 500;
-        letter-spacing: 0.04em;
-        font-size: 14px;
-        line-height: 1.85;
-    }
-    @media screen and (min-width: 1200px) {
-        font-size: 16px;
-        line-height: 1.87;
-    }
-}
-
-.reviews__name{
+  @media screen and (min-width: 768px) {
     font-weight: 500;
-    font-size: 20px;
+    letter-spacing: 0.04em;
+    font-size: 14px;
     line-height: 1.85;
-
-    text-align: center;
-
-    color: #131313;
-
-    @media screen and (min-width: 768px){
-        font-size: 16px;
-        line-height: 1.87;
-    }
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.87;
+  }
 }
 
+.reviews__name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.85;
 
+  text-align: center;
 
+  color: #131313;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.87;
+  }
+}
