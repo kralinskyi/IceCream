@@ -1,55 +1,87 @@
 .hero {
-  
-  margin: 0;
-  padding: 0;
-  background-color: #84a278;
-  padding-left: 20px;
-  padding-right: 20px;
-
   @media screen and (max-width: 767px) {
-    min-width: 320px;
+    padding-top: 99px;
   }
-
   @media screen and (min-width: 768px) {
-    padding-left: 32px;
-    padding-right: 32px;
-    height: 349px;
-
+    padding-top: 80px;
   }
-
   @media screen and (min-width: 1200px) {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-top: 118px;
   }
 }
 
+.hero-container {
+  outline: 1px solid red;
+  position: relative;
+  background-image: url('../images/hero/mobile/mobile-icecream.png'),
+    url('../images/hero/mobile/points-mobile.png');
+  background-repeat: no-repeat;
+  height: 415px;
+  background-size: 117px, 320px;
+  background-position: left 91px bottom 0px, left 0px bottom 0px;
 
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+    screen and (min-resolution: 96dpi) and (min-width: 320px),
+    screen and (min-resolution: 1dppx) and (min-width: 320px) {
+    background-image: url('../images/hero/mobile/mobile-icecream@2x.png'),
+      url('../images/hero/mobile/points-mobile@2x.png');
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/hero/tablet/tablet-icecream.png'),
+      url('../images/hero/tablet/icecreams-tablet.png'),
+      url('../images/hero/tablet/points-tablet.png');
+
+    background-size: 268px, 152px, 768px;
+    height: 415px;
+    background-position: right 92px bottom, left 32px bottom 12px,
+      left 0px bottom 1px;
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+      screen and (min-resolution: 96dpi) and (min-width: 768px),
+      screen and (min-resolution: 1dppx) and (min-width: 768px) {
+      background-image: url('../images/hero/tablet/tablet-icecream@2x.png'),
+        url('../images/hero/tablet/icecreams-tablet@2x.png'),
+        url('../images/hero/tablet/points-tablet@2x.png');
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/hero/desktop/desktop-icecream.png'),
+      url('../images/hero/desktop/icecreams-desktop.png'),
+      url('../images/hero/desktop/points-desktop.png');
+
+    background-size: 456px, 225px, 1200px;
+    height: 664px;
+    background-position: right 77px bottom, left -2px bottom 62px, left bottom;
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+      screen and (min-resolution: 96dpi) and (min-width: 1200px),
+      screen and (min-resolution: 1dppx) and (min-width: 1200px) {
+      background-image: url('../images/hero/desktop/desktop-icecream@2x.png'),
+        url('../images/hero/desktop/icecreams-desktop@2x.png'),
+        url('../images/hero/desktop/points-desktop@2x.png');
+    }
+  }
+}
 
 .hero__title {
   display: inline-block;
   margin: 0;
   padding: 0;
 
-  font-family: "Seymour One";
-  font-style: normal;
+  font-family: 'Seymour One';
   font-weight: 400;
   font-size: 26px;
   line-height: 1.26;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #fcfcfc;
+  color: $white-color;
 
-  padding-top: 50px;
   margin-bottom: 32px;
 
-  @media screen and (min-width: 768px) {
-    padding-top: 14px;
-  }
-
   @media screen and (min-width: 1200px) {
-    padding-top: 45px;
-
     font-size: 38px;
   }
 }
@@ -69,7 +101,6 @@
 
     list-style: none;
   }
-  
 }
 
 .hero__inform--sum {
@@ -86,19 +117,14 @@
   }
 }
 
-
 .hero__button {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   text-align: center;
-
-  padding-bottom: 236px;
 }
 
 .hero__button--products {
-  
-
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -109,32 +135,37 @@
   width: 108px;
   height: 38px;
   margin-right: 12px;
-  
 
   border: 2px solid #f8d24e;
   border-radius: 8px;
-  
-  background-color: #84a178;
-}
 
+  background-color: #84a178;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 19px;
+  }
+}
 
 .hero__button--made {
   padding: 0;
   width: 100px;
   height: 24px;
 
-
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25px;
-  
+
   text-decoration-line: underline;
-  
-  color: #F8D24E;
+
+  color: #f8d24e;
   background-color: #84a178;
   border: none;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 39px;
+  }
 }
 // .hero__button {
 //   background-color: var(--accent-color);
@@ -166,3 +197,30 @@
 //     color: var(--total-black);
 //   }
 // }
+
+.hero__arrow-svg {
+  width: 40px;
+  height: 16px;
+  fill: #fcfcfc;
+}
+
+.hero__item {
+  width: 150px;
+  font-weight: 400;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  line-height: 1.416;
+  color: #fcfcfc;
+}
+
+.hero__text {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  margin-top: 75px;
+  margin-left: 184px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 199px;
+    margin-left: 224px;
+  }
+}
