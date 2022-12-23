@@ -47,6 +47,8 @@
   position: absolute;
   left: 0;
 
+  object-fit: cover;
+
   animation-name: gallery;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
