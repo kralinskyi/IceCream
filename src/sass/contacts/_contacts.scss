@@ -1,5 +1,14 @@
 .contacts {
+  margin-top: -353px;
   width: 100%;
+
+  @media screen and (min-width: 769px) {
+    margin-top: -299px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: -128px;
+  }
 }
 
 // .card-set {
@@ -135,6 +144,8 @@
 // Добавил стили наугад
 
 .contacts__button {
+  margin-bottom: 60px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -143,8 +154,13 @@
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
+    margin-bottom: 40px;
   }
 
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    margin-bottom: 120px;
+  }
   //   max-width: 152px;
   //   cursor: pointer;
   //   background-color: #f8d24e;
