@@ -1,6 +1,6 @@
 .reviews {
   padding-top: 100px;
-  padding-bottom: 80px;
+  // padding-bottom: 80px;
   background: #fff;
   background-repeat: no-repeat;
   background-position: center;
@@ -54,7 +54,6 @@
 
   @media screen and (min-width: 768px) {
     max-width: 964px;
-    padding: 42px 74px;
   }
 }
 
@@ -63,7 +62,16 @@
 }
 
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 0;
+  bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    bottom: 60px;
+  }
+
+  & > span {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .reviews__avatar {
@@ -94,16 +102,24 @@
 }
 
 .reviews__name {
+  margin-bottom: 64px;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.85;
 
   text-align: center;
 
-  color: #131313;
+  color: $dark-color;
 
   @media screen and (min-width: 768px) {
+    margin-bottom: 124px;
+
     font-size: 16px;
     line-height: 1.87;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 144px;
   }
 }
