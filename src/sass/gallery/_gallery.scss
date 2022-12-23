@@ -1,9 +1,14 @@
+
 .gallery__wraper {
     position: relative;
     height: 130px;
     width: 260px;
     margin: 0 auto;
     
+      @media screen and (min-width: 480px) {
+    width: 416px;
+    height: 172px;
+  }
     @media screen and (min-width: 768px){
         width: 704px;
         height: 327px;
@@ -15,26 +20,27 @@
 }
 
 
+
 @keyframes gallery {
     0% {
         opacity: 1;
     }
 
-    17% {
-        opacity: 1;
-    }
+  17% {
+    opacity: 1;
+  }
 
-    25% {
-        opacity: 0;
-    }
+  25% {
+    opacity: 0;
+  }
 
-    92% {
-        opacity: 0;
-    }
+  92% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 .gallery__item{
