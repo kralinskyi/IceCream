@@ -1,76 +1,59 @@
-.footer-section {
-  background-color: #84a178;
-}
+.footer__title {
+  margin-bottom: 60px;
 
-.common-footer {
-  position: relative;
-}
-
-.footer-title {
-  @media screen and (max-width: 767px) {
-    padding-left: 20px;
-    margin-bottom: 67px;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    position: absolute;
-    top: -50px;
-  }
-  @media screen and (min-width: 1200px) {
-    position: absolute;
-    top: -20px;
-  }
-}
-.footer-title__first {
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #fcfcfc;
-  @media screen and (max-width: 767px) {
-    width: 232px;
-    margin-bottom: 16px;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.22;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 352px;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.21;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-bottom: 14px;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 1.23;
-    margin-bottom: 14px;
-  }
+
+  color: $white-color;
+}
+
+.footer-title__first {
+  margin-bottom: 16px;
+
+  font-size: 18px;
+  line-height: 1.22;
+
+  // @media screen and (max-width: 767px) {
+  //   width: 232px;
+  //   font-size: 18px;
+  //   line-height: 1.22;
+  // }
+  // @media screen and (min-width: 768px) and (max-width: 1199px) {
+  //   width: 352px;
+  //   font-size: 26px;
+  //   line-height: 1.21;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   padding-bottom: 14px;
+  //   font-size: 30px;
+  //   font-weight: 400;
+  //   line-height: 1.23;
+  //   margin-bottom: 14px;
+  // }
 }
 
 .footer-title__second {
-  text-align: left;
-  text-transform: uppercase;
-  color: #fcfcfc;
+  font-size: 34px;
   line-height: 1.2;
   letter-spacing: 0.04em;
-  @media screen and (max-width: 767px) {
-    width: 200px;
-    font-size: 34px;
-    font-weight: 700;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    max-width: 352px;
-    font-size: 48px;
-    font-weight: 700;
-  }
 
-  @media screen and (min-width: 1200px) {
-    max-width: 504px;
-    font-size: 58px;
-    font-weight: 700;
-    margin-top: 0;
-  }
+  // @media screen and (max-width: 767px) {
+  //   width: 200px;
+  //   font-size: 34px;
+  //   font-weight: 700;
+  // }
+  // @media screen and (min-width: 768px) and (max-width: 1199px) {
+  //   max-width: 352px;
+  //   font-size: 48px;
+  //   font-weight: 700;
+  // }
+
+  // @media screen and (min-width: 1200px) {
+  //   max-width: 504px;
+  //   font-size: 58px;
+  //   font-weight: 700;
+  //   margin-top: 0;
+  // }
 }
 
 .social {
