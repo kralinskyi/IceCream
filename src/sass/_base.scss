@@ -183,6 +183,12 @@ p {
     width: 322px;
   }
 }
+
+//Добавил z-index чтобы модалка продуктов не лежала под хедером
+.modal.active {
+  z-index: 100;
+}
+
 .modal.active,
 .overlay.active {
   opacity: 1;
