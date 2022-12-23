@@ -31,17 +31,26 @@
   font-weight: 500;
   font-size: 12px;
   margin-bottom: 20px;
-  gap: 32px;
+  gap: 16px;
+  
+  @media screen and (max-width:767.98px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+  }
+  
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
     font-size: 14px;
     margin-bottom: 40px;
+    justify-content: space-between;
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 16px;
     margin-bottom: 60px;
+    gap: 32px
   }
 }
 
@@ -51,14 +60,16 @@
   border-radius: 24px;
   padding: 40px 32px;
 
-  flex-basis: calc((100% - 64px) / 3);
+  
 
   @media screen and (min-width: 768px) {
     padding-left: 24px;
+    flex-basis: calc((100% - 32px) / 3);
   }
 
   @media screen and (min-width: 1200px) {
     padding-left: 40px;
+    flex-basis: calc((100% - 64px) / 3);
   }
 }
 
@@ -141,8 +152,6 @@
 //   }
 // }
 
-// Добавил стили наугад
-
 .contacts__button {
   margin-bottom: 60px;
 
@@ -161,18 +170,7 @@
     flex-direction: row;
     margin-bottom: 120px;
   }
-  //   max-width: 152px;
-  //   cursor: pointer;
-  //   background-color: #f8d24e;
-  //   border-radius: 10px;
-  //   align-items: center;
-  //   padding: 12px 36px;
-  //   font-family: inherit;
-  //   font-size: 14px;
-  //   font-weight: 600;
-  //   line-height: 1.214;
-  //   text-decoration: none;
-  //   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .contacts__btn {
