@@ -71,7 +71,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 
   @media screen and (min-width: 768px) {
     padding-top: 60px;
@@ -113,12 +113,23 @@
   }
 }
 
+.footer__address {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.83;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+
+  @include transition();
+
+  &:hover .footer-tel__link,
+  &:focus .footer-tel__link {
+    color: $button-default;
+  }
+}
+
 .footer-tel__text {
   display: inline-block;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.83;
-  letter-spacing: 0.02em;
 
   color: $dark-color;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -130,11 +141,6 @@
 }
 
 .footer-tel__link {
-  font-weight: 700;
-  line-height: 1.83;
-  font-size: 12px;
-  letter-spacing: 0.02em;
-
   color: $white-color;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 14px;
@@ -151,7 +157,7 @@
     display: block;
     width: 100%;
     height: 1px;
-    background-color: #e1e1e1;
+    background-color: $line-color;
   }
 }
 
