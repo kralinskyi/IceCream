@@ -41,7 +41,7 @@
 
     background-size: 456px, 225px, 1200px;
     height: 564px;
-    background-position: right 77px bottom, left 32px bottom 67px, left bottom;
+    background-position: right 76px bottom, left 16px bottom 67px, left bottom 1px;
 
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
       screen and (min-resolution: 96dpi) and (min-width: 1200px),
@@ -102,9 +102,9 @@
     list-style: none;
     
   }
-  // @media screen and (min-width: 1200px) {
-  //   right: 16px;
-  // }
+  @media screen and (min-width: 1200px) {
+    right: 16px;
+  }
 }
 
 .hero__inform--sum {
@@ -155,16 +155,16 @@
   align-items: baseline;
   text-align: center;
 
-  @media screen and (min-width: 768px) {
-    margin-bottom: 12px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 42px;
-  }
 }
 
 .hero__button--products {
+  margin-right: 12px;
+}
+
+.hero__button--products-link {
+  display: flex;
+  align-items: center;
+  text-align: center;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -173,23 +173,17 @@
 
   color: #000000;
 
-  width: 108px;
-  height: 38px;
-  margin-right: 12px;
-
   border: 2px solid #f8d24e;
   border-radius: 8px;
 
   background-color: #84a178;
 
-  @media screen and (max-width: 767px) {
-    margin-bottom: 19px;
-  }
+  padding: 9px 24px;
 
+  
   @media screen and (min-width: 1200px) {
-    width: 134px;
-    height: 42px;
-
+    padding: 10px 32px;
+    
     font-size: 12px;
     line-height: 1.28;
 
@@ -207,16 +201,17 @@
   &:hover {
     border-color: #0A8817;
     }
+  
 }
 
+.hero__button--made-link {
+  display: flex;
+  align-items: center;
+  text-align: center;
 
-
-
-.hero__button--made {
-  padding: 0;
-  width: 100px;
-  height: 24px;
-
+  padding-top: 9px;
+  padding-bottom: 9px;
+  
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -230,17 +225,15 @@
   border: none;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 27px;
-
-    width: 114px;
-    height: 24px;
+    margin-bottom: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 154px;
-    height: 40px;
+    padding: 11px 21px;
 
-    margin-bottom: 67px;
+    margin-bottom: 131px;
   }
 
 
@@ -258,12 +251,19 @@
 }
 
 
+.hero__text {
+  @media screen and (max-width: 767px) {
+    display: none;
+                
+  }
+  
+  display: inline-block;
+  margin-left: 184px;
+  
 
-
-.hero__arrow-svg {
-  width: 40px;
-  height: 16px;
-  fill: #fcfcfc;
+  @media screen and (min-width: 1200px) {
+    margin-left: 241px;
+  }
 }
 
 .hero__item {
@@ -282,28 +282,14 @@
     margin-bottom: 24px;
 
     font-size: 14px;
-    width: 200px;
+    width: 230px;
     
   }
 }
 
-.hero__text {
-  @media screen and (max-width: 767px) {
-    display: none;
-    
-    
-          
-  }
-  
-  display: inline-block;
-  margin-left: 184px;
-  
+.hero__arrow-svg {
+  width: 40px;
+  height: 16px;
+  fill: #fcfcfc;
+}
 
-  @media screen and (min-width: 1200px) {
-    // margin-top: 199px;
-    margin-left: 241px;
-  }
-}
-.hero__arrow {
-  // display: flex;
-}
