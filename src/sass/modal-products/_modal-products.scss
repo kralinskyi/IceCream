@@ -1,96 +1,33 @@
 .modal-products {
-  // position: absolute;
-  // top: 50%;
-  // left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  // padding: 28px 20px;
+  padding: 28px 20px;
 
-  min-height: 968px;
-  line-height: normal;
-  //   z-index: 10;
+  height: 100vh;
 
-  // background-color: $white-color;
-  // border: 2px solid $button-default;
-  // border-radius: 10px;
-
-  // @include transition(opacity);
-  // @include transition(transform);
-
-  // .backdrop.is-hidden & {
-  //     opacity: 0;
-  //     transform: translateX(-50%) translateY(-30%);
-  // }
+  max-height: 968px;
+  overflow-y: scroll;
 
   @media screen and (min-width: 768px) {
-    // padding: 32px 40px;
+    padding: 32px 40px;
 
-    min-height: 996px;
+    max-height: 996px;
   }
 }
 
-// .modal-products-button {
-//   position: absolute;
-//   top: 12px;
-//   right: 12px;
-
-//   padding: 0;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-
-//   width: 25px;
-//   height: 25px;
-//   background-color: transparent;
-//   border-color: transparent;
-//   cursor: pointer;
-
-//   @include transition(fill);
-
-//   &:hover,
-//   &:focus {
-//     fill: $button-default;
-//   }
-// }
-
-// .modal-products-title {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-
-//   margin-bottom: 20px;
-
-//   font-family: 'Seymour One';
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 20px;
-//   line-height: 1.4;
-//   color: #131313;
-
-//   @media screen and (min-width: 768px) {
-//     flex-direction: row;
-//     justify-content: center;
-//     gap: 3px;
-
-//     margin-bottom: 24px;
-//   }
-// }
-
-/*.modal-products-img {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 29px;
-
-  border-radius: 50%;
+.modal-products-title {
+  display: flex;
+  flex-direction: column;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 31px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3px;
   }
-}*/
+}
 
 .modal-products-box {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 29px;
+  margin-bottom: 22px;
 
   width: 132px;
   height: 132px;
@@ -114,7 +51,7 @@
         rgba(248, 210, 78, 0.7)
       ),
       $product2-color;
-    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    box-shadow: 0px 5.26027px 19.726px $product2-color;
     background-image: url('../images/modal-products/img@1x.png');
     background-repeat: no-repeat;
     background-position: 0 -7px;
@@ -127,10 +64,14 @@
         rgba(213, 117, 63, 0.7)
       ),
       $product3-color;
-    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    box-shadow: 0px 5.26027px 19.726px $product3-color;
     background-image: url('../images/modal-products/img@1x.png');
     background-repeat: no-repeat;
     background-position: 0 -7px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
   }
 }
 
@@ -208,11 +149,13 @@
   &--yellow {
     background-color: $product2-color;
     border-color: $product2-color;
+    box-shadow: 0px 6px 20px $product2-color;
   }
 
   &--red {
     background-color: $product3-color;
     border-color: $product3-color;
+    box-shadow: 0px 6px 20px $product3-color;
   }
 
   &--size {
@@ -357,6 +300,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    margin-top: 16px;
+    margin-top: 0;
   }
 }
