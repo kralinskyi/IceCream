@@ -86,6 +86,13 @@
   border: 1px solid $button-hover;
 }
 
+.modal-franchise__input:not(:placeholder-shown):required:valid {
+  border-color: $button-hover;
+}
+.modal-franchise__input:not(:placeholder-shown):required:invalid {
+  border-color: red;
+}
+
 .modal__btn_form:focus {
   background: $button-hover;
   color: $white-color;
