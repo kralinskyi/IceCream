@@ -14,14 +14,15 @@
     contact information below and we will reach out for additional information.
     We appreciate your patience.
   </p>
-  <form class="modal-franchise__form" autocomplete="off">
+  <form class="modal-franchise__form" autocomplete="off" id="the_form">
     <input
       class="modal-franchise__input"
       type="text"
+      id="txt"
       name="name"
-      id="name"
       required
       placeholder="Name"
+      onkeyup="manage(this)"
     />
 
     <input
@@ -49,7 +50,13 @@
       placeholder="Comment"
     ></textarea>
 
-    <button class="modal__btn button" type="submit">Submit</button>
+    <button
+      class="modal__btn button disable modal__btn_form"
+      id="btSubmit"
+      disabled
+    >
+      Submit
+    </button>
   </form>
 </div>
 <div class="overlay js-overlay-modal"></div>
