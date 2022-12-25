@@ -42,7 +42,7 @@
   background: $input-color;
   margin-bottom: 12px;
   outline: 1px solid transparent;
-  @include transition();
+  @include transition(outline);
   @media screen and (min-width: 768px) {
     padding: 11px 16px;
     margin-bottom: 16px;
@@ -83,7 +83,14 @@
 }
 .modal-franchise__input:focus-within,
 .modal-franchise__input:hover {
-  border: 1px solid $button-hover;
+  outline-color: $button-hover;
+}
+
+.modal-franchise__input:not(:placeholder-shown):required:valid {
+  border-color: $button-hover;
+}
+.modal-franchise__input:not(:placeholder-shown):required:invalid {
+  outline-color: red;
 }
 
 .modal__btn_form:focus {

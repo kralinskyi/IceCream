@@ -1,5 +1,5 @@
 <div class="modal modal-franchise" data-modal="7">
-  <button modal-close type="button" class="modal__btn-close js-modal-close">
+  <button type="button" class="modal__btn-close js-modal-close">
     <svg class="close-icon" width="20" height="20">
       <use href="./images/modal-franchise/modal-franchise.svg#icon-close"></use>
     </svg>
@@ -22,11 +22,11 @@
       name="name"
       required
       placeholder="Name"
-      onkeyup="manage(this)"
+      pattern="^([A-Za-zА-Яа-я]{3,15}\s[A-Za-zА-Яа-я]{3,15})"
     />
 
     <input
-      class="modal-franchise__input"
+      class="modal-franchise__input phone"
       type="tel"
       name="number-phone"
       id="number-phone"
@@ -40,6 +40,7 @@
       name="email"
       id="email"
       placeholder="Email"
+      required
     />
 
     <textarea
@@ -53,6 +54,7 @@
     <button
       class="modal__btn button disable modal__btn_form"
       id="btSubmit"
+      type="submit"
       disabled
     >
       Submit
