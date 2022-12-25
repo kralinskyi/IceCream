@@ -159,8 +159,8 @@ p {
     height: 24px;
   }
 }
-.modal__btn-close :hover,
-.modal__btn-close :focus {
+.modal__btn-close:hover,
+.modal__btn-close:focus {
   color: $button-hover;
 }
 .close-icon {
