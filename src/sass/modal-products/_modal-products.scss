@@ -246,12 +246,6 @@
     border-color: $product3-color;
   }
 
-  &:focus,
-  &:hover {
-    outline-color: $button-default;
-    //  border: 1px solid $button-hover;
-  }
-
   @media screen and (min-width: 768px) {
     width: 368px;
     height: 42px;
