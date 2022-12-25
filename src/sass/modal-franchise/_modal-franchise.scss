@@ -58,7 +58,8 @@
   display: block;
   resize: none;
 }
-.modal__btn {
+
+.modal__btn_form {
   padding: 12px 34px;
   margin: auto;
   height: 42px;
@@ -85,10 +86,13 @@
   border: 1px solid $button-hover;
 }
 
-.modal__btn:focus {
+.modal__btn_form:focus {
   background: $button-hover;
   color: $white-color;
 }
-.modal__btn:hover {
+.modal__btn_form:hover {
   background: $button-hover;
 }
+// .modal__btn_form.disable {
+//   background-color: #ababab;
+// }

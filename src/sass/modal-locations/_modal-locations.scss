@@ -28,3 +28,31 @@
     display: none;
   }
 }
+.modal-location__button {
+  display: flex;
+  margin: auto;
+  width: 134px;
+  height: 42px;
+  background-color: $button-default;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #131313;
+  letter-spacing: 0;
+  &:hover {
+    background-color: $button-hover;
+  }
+  &:focus {
+    color: $white-color;
+  }
+  @include transition();
+  @include transition(background-color);
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
