@@ -16,3 +16,15 @@
     margin-bottom: 32px;
   }
 }
+
+.modal__map--mobile {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.modal__map--tablet-desktop {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
