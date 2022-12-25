@@ -16,17 +16,18 @@
   </p>
   <form class="modal-franchise__form" autocomplete="off" id="the_form">
     <input
-      class="modal-franchise__input"
+      class="modal-franchise__input input"
       type="text"
       id="txt"
       name="name"
       required
       placeholder="Name"
-      pattern="^([A-Za-zА-Яа-я]{3,15}\s[A-Za-zА-Яа-я]{3,15})"
+      pattern="^([a-zA-Z]{3,15}[ ]*)+"
+      title="Name from 3 characters"
     />
 
     <input
-      class="modal-franchise__input phone"
+      class="modal-franchise__input input phone"
       type="tel"
       name="number-phone"
       id="number-phone"
@@ -35,7 +36,7 @@
     />
 
     <input
-      class="modal-franchise__input"
+      class="modal-franchise__input input"
       type="email"
       name="email"
       id="email"
@@ -44,7 +45,7 @@
     />
 
     <textarea
-      class="modal-franchise__input modal-franchise__textarea"
+      class="modal-franchise__input modal-franchise__textarea input"
       name="comment"
       rows="3"
       id="comment"

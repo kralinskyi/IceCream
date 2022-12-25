@@ -27,15 +27,15 @@
       </ul>
       <form name="modal-products_form" class="modal-products-form-group">
         <label>
-          <input class="modal-products-form-field" placeholder="Name" name="user_name" type="text" required/>
+          <input class="modal-products-form-field input" placeholder="Name" name="user_name" type="text" required  title="Name from 3 characters" pattern="^([a-zA-Z]{3,15}[ ]*)+"/>
         </label>
         <label>
-          <input class="modal-products-form-field" placeholder="Phone" name="user_tel" type="tel" required/>
+          <input class="modal-products-form-field phone input" placeholder="Phone" name="user_tel" type="tel" required/>
         </label>
         </label>
         <label>
           <textarea
-            class="modal-products-form-field modal-products-form-message"
+            class="modal-products-form-field modal-products-form-message input"
             placeholder="Comment"
             rows="7" required
           ></textarea>
@@ -76,17 +76,18 @@
       </ul>
       <form name="modal-products_form" class="modal-products-form-group">
         <label>
-          <input class="modal-products-form-field modal-products-form-field--yellow" placeholder="Name" name="user_name" type="text" required />
+          <input class="modal-products-form-field modal-products-form-field--yellow " placeholder="Name" name="user_name" type="text" required title="Name from 3 characters" pattern="^([a-zA-Z]{3,15}[ ]*)+"/>
         </label>
         <label>
-          <input class="modal-products-form-field modal-products-form-field--yellow" placeholder="Phone" name="user_tel" type="tel" required/>
+          <input class="modal-products-form-field modal-products-form-field--yellow phone " placeholder="Phone" name="user_tel" type="tel" required/>
         </label>
         </label>
         <label>
           <textarea
-            class="modal-products-form-field  modal-products-form-field--yellow modal-products-form-message"
+            class="modal-products-form-field  modal-products-form-field--yellow modal-products-form-message "
             placeholder="Comment"
             rows="7" required
+            
           ></textarea>
         </label>
         <button class="modal-products-form-button" type="submit">
@@ -125,15 +126,15 @@
       </ul>
       <form name="modal-products_form" class="modal-products-form-group">
         <label>
-          <input class="modal-products-form-field modal-products-form-field--red" placeholder="Name" name="user_name" type="text" required />
+          <input class="modal-products-form-field modal-products-form-field--red phone " placeholder="Name" name="user_name" type="text" required title="Name from 3 characters" pattern="^([a-zA-Z]{3,15}[ ]*)+"/>
         </label>
         <label>
-          <input class="modal-products-form-field modal-products-form-field--red" placeholder="Phone" name="user_tel" type="tel" required/>
+          <input class="modal-products-form-field modal-products-form-field--red " placeholder="Phone" name="user_tel" type="tel" required/>
         </label>
         </label>
         <label>
           <textarea
-            class="modal-products-form-field modal-products-form-field--red modal-products-form-message"
+            class="modal-products-form-field modal-products-form-field--red modal-products-form-message "
             placeholder="Comment"
             rows="7" required
           ></textarea>

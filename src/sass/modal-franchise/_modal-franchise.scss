@@ -81,15 +81,15 @@
     line-height: 1.21;
   }
 }
-.modal-franchise__input:focus-within,
-.modal-franchise__input:hover {
+.input:focus-within,
+.input:hover {
   outline-color: $button-hover;
 }
 
-.modal-franchise__input:not(:placeholder-shown):required:valid {
+.input:not(:placeholder-shown):required:valid {
   border-color: $button-hover;
 }
-.modal-franchise__input:not(:placeholder-shown):required:invalid {
+.input:not(:placeholder-shown):required:invalid {
   outline-color: red;
 }
 
