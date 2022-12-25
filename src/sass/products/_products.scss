@@ -306,4 +306,5 @@
 .products__svg {
   cursor: pointer;
   fill: currentColor;
+  @include transition(fill);
 }
