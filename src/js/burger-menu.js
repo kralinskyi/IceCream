@@ -2,6 +2,16 @@
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
+  const navLink = [...document.querySelectorAll('.burger-menu__item a')];
+
+  navLink.forEach(e => {
+    e.addEventListener('click', () => {
+      const isMenuOpen =
+        openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+      openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+      mobileMenu.classList.toggle('is-open');
+    });
+  });
 
   const toggleMenu = () => {
     const isMenuOpen =
