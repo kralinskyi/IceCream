@@ -1,5 +1,5 @@
 <div class="modal modal-franchise" data-modal="7">
-  <button modal-close type="button" class="modal__btn-close js-modal-close">
+  <button type="button" class="modal__btn-close js-modal-close">
     <svg class="close-icon" width="20" height="20">
       <use href="./images/modal-franchise/modal-franchise.svg#icon-close"></use>
     </svg>
@@ -16,34 +16,35 @@
   </p>
   <form class="modal-franchise__form" autocomplete="off" id="the_form">
     <input
-      class="modal-franchise__input"
+      class="modal-franchise__input input"
       type="text"
       id="txt"
       name="name"
       required
       placeholder="Name"
-      onkeyup="manage(this)"
+      pattern="^([a-zA-Z]{3,15}[ ]*)+"
+      title="Name from 3 characters"
     />
 
     <input
-      class="modal-franchise__input"
+      class="modal-franchise__input input phone"
       type="tel"
       name="number-phone"
       id="number-phone"
-      required
       placeholder="Phone"
     />
 
     <input
-      class="modal-franchise__input"
+      class="modal-franchise__input input"
       type="email"
       name="email"
       id="email"
       placeholder="Email"
+      required
     />
 
     <textarea
-      class="modal-franchise__input modal-franchise__textarea"
+      class="modal-franchise__input modal-franchise__textarea input"
       name="comment"
       rows="3"
       id="comment"
@@ -51,9 +52,9 @@
     ></textarea>
 
     <button
-      class="modal__btn button disable modal__btn_form"
+      class="modal__btn button disable modal__btn_form btn-arrow-svg"
       id="btSubmit"
-      disabled
+      type="submit"
     >
       Submit
     </button>

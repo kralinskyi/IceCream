@@ -8,7 +8,7 @@ body {
   letter-spacing: 0.04em;
 
   background-color: $main-color;
-
+  cursor: url(../images/cursor.svg) 15 15, auto;
   &.no-scroll {
     overflow: hidden;
   }
@@ -38,6 +38,7 @@ ol {
 a {
   text-decoration: none;
   cursor: pointer;
+  // cursor: url(../images/cursor.svg) 15 15, auto;
 }
 h1,
 h2,
@@ -47,6 +48,10 @@ h5,
 h6,
 p {
   margin: 0;
+}
+button:hover,
+a:hover {
+  cursor: url(../images/cursor.svg) 15 15, auto;
 }
 
 .container {
@@ -160,8 +165,8 @@ p {
     height: 24px;
   }
 }
-.modal__btn-close :hover,
-.modal__btn-close :focus {
+.modal__btn-close:hover,
+.modal__btn-close:focus {
   color: $button-hover;
 }
 .close-icon {
