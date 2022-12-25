@@ -23,7 +23,9 @@ body {
     padding-top: 118px;
   }
 }
-
+.modal-show {
+  overflow: hidden;
+}
 img {
   display: block;
   max-width: 100%;
