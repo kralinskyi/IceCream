@@ -153,8 +153,8 @@
 
   cursor: pointer;
 
-  @include transition(background-color);
-  @include transition();
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 768px) {
     margin-top: 32px;

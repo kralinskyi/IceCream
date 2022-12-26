@@ -8,39 +8,54 @@
 <h2 class="modal__title modal-hero-title">Buy now</h2>
 
 <ul class="modal-hero-list list">
-    <li class="modal-hero-item">
-      <div>
-        <div class="modal-hero-box modal-hero-img1"></div>
-        <p class="modal-hero-name">ice cream</p>
-      </div>
-    </li>
-    <li class="modal-hero-item modal-hero-item--yellow">
-      <div>
-        <div class="modal-hero-box modal-hero-box--yellow modal-hero-img2"></div>
-        <p class="modal-hero-name">ice coffee</p>
-      </div>
-    </li>
-    <li class="modal-hero-item modal-hero-item--red">
-      <div>
-        <div class="modal-hero-box modal-hero-box--red modal-hero-img3"></div>
-        <p class="modal-hero-name">milkshake</p>
-      </div>
-    </li>
-  </ul>
+  <form>
+    <label class="modal-hero-label">
+      <input type="checkbox" class="modal-hero-checkbox" name="product" value="ice cream"/>
+      <li class="modal-hero-item">
+        <div>
+          <div class="modal-hero-box modal-hero-img1"></div>
+          <p class="modal-hero-name">ice cream</p>
+        </div>
+      </li>
+    </label>
+  </form>
+  <form>
+    <label class="modal-hero-label">
+      <input type="checkbox" class="modal-hero-checkbox modal-hero-checkbox--yellow" name="product" value="ice coffee" checked/>
+        <li class="modal-hero-item modal-hero-item--yellow">
+          <div>
+            <div class="modal-hero-box modal-hero-box--yellow modal-hero-img2"></div>
+            <p class="modal-hero-name">ice coffee</p>
+          </div>
+        </li>
+    </label>
+  </form>
+  <form>
+    <label class="modal-hero-label">
+      <input type="checkbox" class="modal-hero-checkbox modal-hero-checkbox--red" name="product" value="milkshake"/>
+        <li class="modal-hero-item modal-hero-item--red">
+          <div>
+            <div class="modal-hero-box modal-hero-box--red modal-hero-img3"></div>
+            <p class="modal-hero-name">milkshake</p>
+          </div>
+        </li>
+    </label>
+  </form>
+</ul>
 
   <form name="modal-hero_form" class="modal-hero-form-group">
     <label>
-      <input class="modal-hero-form-field" placeholder="Name" name="user_name" type="text" />
+      <input class="modal-hero-form-field input" placeholder="Name" name="user_name" type="text" required  title="Name from 3 characters" pattern="^([a-zA-Z]{3,15}[ ]*)+"/>
     </label>
     <label>
-      <input class="modal-hero-form-field" placeholder="Phone" name="user_tel" type="tel" />
+      <input class="modal-hero-form-field phone input" placeholder="Phone" name="user_tel" type="tel" required/>
     </label>
     </label>
     <label>
       <textarea
-        class="modal-hero-form-field modal-hero-form-message"
+        class="modal-hero-form-field modal-hero-form-message input"
         placeholder="Comment"
-        rows="7"
+        rows="7" required
       ></textarea>
     </label>
     <button class="modal-hero-form-button" type="submit">
