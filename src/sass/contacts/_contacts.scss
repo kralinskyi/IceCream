@@ -86,7 +86,7 @@
       color: $product3-color;
       line-height: calc(22 / 12);
 
-      cursor: url(../images/cursor.svg) 15 15, auto;
+      // cursor: url(../images/cursor.svg) 15 15, auto;
 
       &:hover,
       &:focus {
@@ -128,6 +128,11 @@
     color: $dark-color;
 
     cursor: url(../images/cursor.svg) 15 15, auto;
+
+      &:hover,
+      &:focus {
+        color: $product3-color;
+      }
   }
 
   &__button {
