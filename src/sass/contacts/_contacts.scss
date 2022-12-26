@@ -127,12 +127,10 @@
     font-style: normal;
     color: $dark-color;
 
-    cursor: url(../images/cursor.svg) 15 15, auto;
-
-      &:hover,
-      &:focus {
-        color: $product3-color;
-      }
+    &:hover,
+    &:focus {
+      color: $product3-color;
+    }
   }
 
   &__button {
@@ -168,8 +166,6 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.29;
-
-  cursor: pointer;
 
   &--primary {
     background-color: $button-default;
