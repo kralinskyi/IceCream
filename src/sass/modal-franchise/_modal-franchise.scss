@@ -50,6 +50,8 @@
   margin-bottom: 12px;
   outline: 1px solid transparent;
   @include transition(outline);
+
+  @include transition(background-color);
   @media screen and (min-width: 768px) {
     padding: 11px 16px;
     margin-bottom: 16px;
@@ -97,7 +99,8 @@
   border-color: $button-hover;
 }
 .input:not(:placeholder-shown):required:invalid {
-  outline-color: red;
+  outline-color: rgb(225, 78, 78);
+  background-color: rgba(245, 199, 199, 0.15);
 }
 
 .modal__btn_form:focus {

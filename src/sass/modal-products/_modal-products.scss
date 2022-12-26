@@ -279,7 +279,7 @@
   background-color: $button-default;
   border: none;
   border-radius: 10px;
-  cursor: pointer;
+  //cursor: pointer;
 
   @include transition();
   @include transition(background-color);
@@ -306,7 +306,8 @@
   outline-color: $button-hover;
 }
 .modal-products-form-field--yellow:not(:placeholder-shown):required:invalid {
-  outline-color: red;
+  outline-color: rgb(225, 78, 78);
+  background-color: rgba(245, 199, 199, 0.15);
 }
 .modal-products-form-field--red:focus-within,
 .modal-products-form-field--red:hover {
@@ -317,5 +318,6 @@
   outline-color: $button-hover;
 }
 .modal-products-form-field--red:not(:placeholder-shown):required:invalid {
-  outline-color: red;
+  outline-color: rgb(225, 78, 78);
+  background-color: rgba(245, 199, 199, 0.15);
 }
