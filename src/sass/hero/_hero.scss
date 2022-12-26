@@ -14,6 +14,10 @@
       url('../images/hero/mobile/points-mobile@2x.png');
   }
 
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 320px;
+  }
+
   @media screen and (min-width: 768px) {
     background-image: url('../images/hero/tablet/tablet-icecream.png'),
       url('../images/hero/tablet/icecreams-tablet.png'),
@@ -40,7 +44,8 @@
 
     background-size: 456px, 225px, 1200px;
     height: 564px;
-    background-position: right 92px bottom, left 16px bottom 67px,
+    background-position: right 76px bottom, left 16px bottom 67px,
+
       left bottom 1px;
 
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
@@ -191,6 +196,11 @@
       color: #fcfcfc;
       border-color: #0a8817;
     }
+
+    &:disabled {
+      color: #000000;
+      background-color: #ababab;
+    }
   }
 
   &:hover {
@@ -245,6 +255,11 @@
 
   &:focus {
     color: #fcfcfc;
+
+  }
+
+  &:disabled {
+    color: #ababab;
   }
 }
 
