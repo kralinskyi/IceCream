@@ -1,4 +1,3 @@
-
 .hero-container {
   position: relative;
   background-image: url('../images/hero/mobile/mobile-icecream.png'),
@@ -13,6 +12,10 @@
     screen and (min-resolution: 1dppx) and (min-width: 320px) {
     background-image: url('../images/hero/mobile/mobile-icecream@2x.png'),
       url('../images/hero/mobile/points-mobile@2x.png');
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 320px;
   }
 
   @media screen and (min-width: 768px) {
@@ -41,7 +44,8 @@
 
     background-size: 456px, 225px, 1200px;
     height: 564px;
-    background-position: right 76px bottom, left 16px bottom 67px, left bottom 1px;
+    background-position: right 76px bottom, left 16px bottom 67px,
+      left bottom 1px;
 
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
       screen and (min-resolution: 96dpi) and (min-width: 1200px),
@@ -64,7 +68,7 @@
   line-height: 1.26;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  
+
   color: $white-color;
 
   margin-bottom: 32px;
@@ -85,7 +89,7 @@
 
   @media screen and (min-width: 1200px) {
     font-size: 38px;
-     }
+  }
 }
 
 .hero__inform {
@@ -94,13 +98,11 @@
   }
 
   @media screen and (min-width: 768px) {
-    
     position: absolute;
     right: 32px;
     top: 8px;
     text-align: right;
     list-style: none;
-    
   }
   @media screen and (min-width: 1200px) {
     right: 16px;
@@ -115,7 +117,7 @@
     font-size: 28px;
     line-height: 1.21;
     letter-spacing: 0.04em;
-        
+
     color: #131313;
 
     margin-bottom: 4px;
@@ -123,7 +125,6 @@
 
   @media screen and (min-width: 1200px) {
     font-size: 46px;
-    
   }
 }
 
@@ -134,8 +135,8 @@
     font-weight: 400;
     font-size: 8px;
     line-height: 1.25;
-        
-    color: #FCFCFC;
+
+    color: #fcfcfc;
     margin-bottom: 20px;
 
     &:last-child {
@@ -149,12 +150,10 @@
   }
 }
 
-
 .hero__button {
   display: flex;
   align-items: baseline;
   text-align: center;
-
 }
 
 .hero__button--products {
@@ -180,28 +179,26 @@
 
   padding: 9px 24px;
 
-  
   @media screen and (min-width: 1200px) {
     padding: 10px 32px;
-    
+
     font-size: 12px;
     line-height: 1.28;
 
     &:focus {
-      color: #FCFCFC;
-      border-color: #0A8817;
+      color: #fcfcfc;
+      border-color: #0a8817;
     }
 
     &:disabled {
       color: #000000;
-      background-color: #ABABAB;
+      background-color: #ababab;
     }
   }
 
   &:hover {
-    border-color: #0A8817;
-    }
-  
+    border-color: #0a8817;
+  }
 }
 
 .hero__button--made-link {
@@ -211,7 +208,7 @@
 
   padding-top: 9px;
   padding-bottom: 9px;
-  
+
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -236,30 +233,26 @@
     margin-bottom: 131px;
   }
 
-
   &:hover {
-    color: #0A8817;
+    color: #0a8817;
   }
-  
+
   &:focus {
-    color: #FCFCFC;
+    color: #fcfcfc;
   }
-  
+
   &:disabled {
-    color: #ABABAB;
+    color: #ababab;
   }
 }
-
 
 .hero__text {
   @media screen and (max-width: 767px) {
     display: none;
-                
   }
-  
+
   display: inline-block;
   margin-left: 184px;
-  
 
   @media screen and (min-width: 1200px) {
     margin-left: 241px;
@@ -283,7 +276,6 @@
 
     font-size: 14px;
     width: 230px;
-    
   }
 }
 
@@ -292,4 +284,3 @@
   height: 16px;
   fill: #fcfcfc;
 }
-
