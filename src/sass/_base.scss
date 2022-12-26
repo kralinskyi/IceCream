@@ -8,7 +8,7 @@ body {
   letter-spacing: 0.04em;
 
   background-color: $main-color;
-
+  cursor: url(../images/cursor.svg) 15 15, auto;
   &.no-scroll {
     overflow: hidden;
   }
@@ -23,7 +23,9 @@ body {
     padding-top: 118px;
   }
 }
-
+.modal-show {
+  overflow: hidden;
+}
 img {
   display: block;
   max-width: 100%;
@@ -38,6 +40,7 @@ ol {
 a {
   text-decoration: none;
   cursor: pointer;
+  // cursor: url(../images/cursor.svg) 15 15, auto;
 }
 h1,
 h2,
@@ -47,6 +50,10 @@ h5,
 h6,
 p {
   margin: 0;
+}
+button:hover,
+a:hover {
+  cursor: url(../images/cursor.svg) 15 15, auto;
 }
 
 .container {
@@ -114,7 +121,7 @@ p {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 20;
-  transition: opacity 250ms var(--cubic);
+  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 // ---- Добавляем стандартный класс в модальные окна в т.ч. для скрипта
 
@@ -131,7 +138,8 @@ p {
   border-radius: 10px;
   padding: 28px;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms var(--cubic);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 768px) {
     width: 568px;
     padding: 32px 60px;
@@ -159,8 +167,8 @@ p {
     height: 24px;
   }
 }
-.modal__btn-close :hover,
-.modal__btn-close :focus {
+.modal__btn-close:hover,
+.modal__btn-close:focus {
   color: $button-hover;
 }
 .close-icon {

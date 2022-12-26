@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
             подложке и окну чтобы показать их. */
       modalElem.classList.add('active');
       overlay.classList.add('active');
+      document.body.classList.add('modal-show');
     }); // end click
   }); // end foreach
 
@@ -61,6 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       parentModal.classList.remove('active');
       overlay.classList.remove('active');
+      document.body.classList.remove('modal-show');
     });
   }); // end foreach
 
@@ -82,3 +84,17 @@ document.addEventListener('DOMContentLoaded', function () {
     this.classList.remove('active');
   });
 }); // end ready
+
+// document.querySelector('button').addEventListener('click', function () {
+//   document.body.style.paddingRight = getComputedStyle(
+//     document.querySelector('.scroll-fix')
+//   ).width;
+//   document.body.classList.add('modal-show');
+// });
+// document
+//   .querySelector('div.modal-layer')
+//   .addEventListener('click', function (ev) {
+//     if (this !== ev.target) return;
+//     document.body.classList.remove('modal-show');
+//     document.body.style.paddingRight = '0px';
+//   });
