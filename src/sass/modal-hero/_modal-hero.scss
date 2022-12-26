@@ -11,8 +11,6 @@
         padding: 32px 54px;
 
         max-height: 644px;
-
-        overflow: hidden;
     }
 }
 
@@ -33,10 +31,18 @@
     margin-bottom: 32px;
 
     @media screen and (min-width: 768px) {
-        gap: 32px;
+        gap: 28px;
 
         margin-bottom: 40px;
     }
+
+    @media screen and (min-width: 1200px) {
+        gap: 20px;
+    }
+}
+
+.modal-hero-checkbox {
+    appearance: none;
 }
 
 .modal-hero-item {
@@ -52,24 +58,33 @@
     width: 132px;
     min-height: 135px;
     
-    border: 2px solid #96AF8C;
+    border: 2px solid $product1-color;
     filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
     border-radius: 15px;
 
+    @include transition(background-color);
+
     &--yellow {
-        background: #EFD478;
-        border-color: #EFD478;
+        border-color: $product2-color;
     }
 
     &--red {
-        border: 2px solid #D6936D;
+        border: 2px solid $product3-color;
         filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
         border-radius: 15.7808px;
     }
+}
 
-    @media screen and (min-width: 768px) {
-        width: calc((100% - 64px) / 3);
-    }
+.modal-hero-checkbox:checked + .modal-hero-item {
+    background-color: $product1-color;
+}
+
+.modal-hero-checkbox:checked + .modal-hero-item--yellow {
+    background-color: $product2-color;
+}
+
+.modal-hero-checkbox:checked + .modal-hero-item--red {
+    background-color: $product3-color;
 }
 
 .modal-hero-box {
@@ -81,7 +96,7 @@
     width: 132px;
     height: 132px;
 
-    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #96AF8C;
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), $product1-color;
     box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
     
     background-repeat: no-repeat;
@@ -89,14 +104,14 @@
     border-radius: 50%;
 
     &--yellow {
-        background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+        background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), $product2-color;
         box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
         background-repeat: no-repeat;
         background-position: 0 -7px;
     }
 
     &--red {
-        background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D6936D;
+        background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), $product3-color;
         box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
         background-repeat: no-repeat;
         background-position: 0 -7px;
@@ -128,7 +143,7 @@
     margin-top: auto;
     margin-bottom: 20px;
 
-    color: #131313;
+    color: $dark-color;
 }
 
 .modal-hero-form-group {
@@ -150,13 +165,11 @@
     padding: 11px;
 
     background-color: rgba(248, 210, 78, 0.1);
-    border: 1px solid #84A178;
+    border: 1px solid $main-color;
     border-radius: 10px;
 
     outline: 1px solid transparent;
     outline-offset: -1px;
-
-    @include transition(outline-color);
 
     @media screen and (min-width: 768px) {
         width: 368px;
@@ -197,11 +210,11 @@
     @include transition(background-color);
 
     &:hover {
-        background-color: #0A8817;
+        background-color: $button-hover;
     }
 
     &:focus {
-        background-color: #0A8817;
+        background-color: $button-hover;
         color: #FFFFFF;
     }
 

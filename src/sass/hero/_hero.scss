@@ -45,6 +45,7 @@
     background-size: 456px, 225px, 1200px;
     height: 564px;
     background-position: right 76px bottom, left 16px bottom 67px,
+
       left bottom 1px;
 
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
@@ -55,6 +56,8 @@
         url('../images/hero/desktop/points-desktop@2x.png');
     }
   }
+
+  
 }
 
 .hero__title {
@@ -81,6 +84,8 @@
     font-size: 38px;
     margin-bottom: 28px;
   }
+
+  animation: left-to-right 1000ms ease 200ms both;
 }
 
 .hero__title--text {
@@ -179,6 +184,8 @@
 
   padding: 9px 24px;
 
+  cursor: url(../images/cursor.svg) 15 15, auto;
+
   @media screen and (min-width: 1200px) {
     padding: 10px 32px;
 
@@ -199,6 +206,10 @@
   &:hover {
     border-color: #0a8817;
   }
+
+  @include transition(border-color);
+  @include transition();
+
 }
 
 .hero__button--made-link {
@@ -221,6 +232,11 @@
   background-color: #84a178;
   border: none;
 
+  cursor: url(../images/cursor.svg) 15 15, auto;
+
+  @include transition();
+  
+  
   @media screen and (min-width: 768px) {
     margin-bottom: 30px;
     padding-left: 5px;
@@ -239,6 +255,7 @@
 
   &:focus {
     color: #fcfcfc;
+
   }
 
   &:disabled {
@@ -257,6 +274,8 @@
   @media screen and (min-width: 1200px) {
     margin-left: 241px;
   }
+
+  animation: bottom-to-top 1000ms ease 200ms both;
 }
 
 .hero__item {
@@ -277,6 +296,12 @@
     font-size: 14px;
     width: 230px;
   }
+
+  
+}
+
+.hero__arrow {
+  cursor: url(../images/cursor.svg) 15 15, auto;
 }
 
 .hero__arrow-svg {
