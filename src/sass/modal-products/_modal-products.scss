@@ -303,7 +303,7 @@
 }
 
 .modal-products-form-field--yellow:not(:placeholder-shown):required:valid {
-  outline-color: #edc236;
+  outline-color: $button-hover;
 }
 .modal-products-form-field--yellow:not(:placeholder-shown):required:invalid {
   outline-color: red;
@@ -314,7 +314,7 @@
 }
 
 .modal-products-form-field--red:not(:placeholder-shown):required:valid {
-  outline-color: #d66625;
+  outline-color: $button-hover;
 }
 .modal-products-form-field--red:not(:placeholder-shown):required:invalid {
   outline-color: red;
