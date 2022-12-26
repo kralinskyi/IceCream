@@ -295,6 +295,8 @@
   color: $white-color;
   fill: currentColor;
 
+  @include transition();
+
   &:hover,
   &:focus {
     color: $button-default;
@@ -302,4 +304,3 @@
 
   @include transition();
 }
-  

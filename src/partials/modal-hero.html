@@ -7,41 +7,37 @@
 
 <h2 class="modal__title modal-hero-title">Buy now</h2>
 
-<ul class="modal-hero-list list">
-  <form>
-    <label class="modal-hero-label">
-      <input type="checkbox" class="modal-hero-checkbox" name="product" value="ice cream"/>
-      <li class="modal-hero-item">
-        <div>
-          <div class="modal-hero-box modal-hero-img1"></div>
-          <p class="modal-hero-name">ice cream</p>
-        </div>
-      </li>
-    </label>
-  </form>
-  <form>
-    <label class="modal-hero-label">
-      <input type="checkbox" class="modal-hero-checkbox modal-hero-checkbox--yellow" name="product" value="ice coffee" checked/>
-        <li class="modal-hero-item modal-hero-item--yellow">
-          <div>
-            <div class="modal-hero-box modal-hero-box--yellow modal-hero-img2"></div>
-            <p class="modal-hero-name">ice coffee</p>
-          </div>
-        </li>
-    </label>
-  </form>
-  <form>
-    <label class="modal-hero-label">
-      <input type="checkbox" class="modal-hero-checkbox modal-hero-checkbox--red" name="product" value="milkshake"/>
-        <li class="modal-hero-item modal-hero-item--red">
-          <div>
-            <div class="modal-hero-box modal-hero-box--red modal-hero-img3"></div>
-            <p class="modal-hero-name">milkshake</p>
-          </div>
-        </li>
-    </label>
-  </form>
-</ul>
+<form>
+  <ul class="modal-hero-list list">
+    <li>
+      <label class="modal-hero-label">
+        <input type="checkbox" class="modal-hero-checkbox" name="product" value="ice cream">
+          <span class="modal-hero-item">
+            <span class="modal-hero-box modal-hero-img1"></span>
+            <span class="modal-hero-name">ice cream</span>
+          </span>
+      </label>
+    </li>
+    <li>
+      <label class="modal-hero-label">
+        <input type="checkbox" class="modal-hero-checkbox modal-hero-checkbox--yellow" name="product" value="ice coffee" checked>
+          <span class="modal-hero-item modal-hero-item--yellow">
+            <span class="modal-hero-box modal-hero-box--yellow modal-hero-img2"></span>
+            <span class="modal-hero-name">ice coffee</span>
+          </span>
+      </label>
+    </li>
+    <li>
+      <label class="modal-hero-label">
+        <input type="checkbox" class="modal-hero-checkbox modal-hero-checkbox--red" name="product" value="milkshake">
+          <span class="modal-hero-item modal-hero-item--red">
+            <span class="modal-hero-box modal-hero-box--red modal-hero-img3"></span>
+            <span class="modal-hero-name">milkshake</span>
+          </span>
+      </label>
+    </li>
+  </ul>
+</form>
 
   <form name="modal-hero_form" class="modal-hero-form-group">
     <label>
@@ -49,7 +45,6 @@
     </label>
     <label>
       <input class="modal-hero-form-field phone input" placeholder="Phone" name="user_tel" type="tel" required/>
-    </label>
     </label>
     <label>
       <textarea

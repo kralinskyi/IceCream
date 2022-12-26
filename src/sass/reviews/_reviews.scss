@@ -129,3 +129,8 @@
     margin-bottom: 144px;
   }
 }
+
+.swiper-pagination-bullet:hover, .swiper-pagination-bullet:focus{
+    cursor: url(../images/cursor.svg) 15 15, auto;
+}
+
