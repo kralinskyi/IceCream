@@ -46,10 +46,11 @@
   padding: 8px 12px;
   border: 1px solid $main-color;
   border-radius: 10px;
-  background: $input-color;
+  background-color: $input-color;
   margin-bottom: 12px;
   outline: 1px solid transparent;
   @include transition(outline);
+  @include transition(background-color);
   @media screen and (min-width: 768px) {
     padding: 11px 16px;
     margin-bottom: 16px;
@@ -97,7 +98,8 @@
   border-color: $button-hover;
 }
 .input:not(:placeholder-shown):required:invalid {
-  outline-color: red;
+  outline-color: rgb(241, 105, 105);
+  background-color: rgba(232, 173, 173, 0.15);
 }
 
 .modal__btn_form:focus {

@@ -306,7 +306,8 @@
   outline-color: $button-hover;
 }
 .modal-products-form-field--yellow:not(:placeholder-shown):required:invalid {
-  outline-color: red;
+  outline-color: rgb(243, 94, 94);
+  background-color: rgba(232, 173, 173, 0.15);
 }
 .modal-products-form-field--red:focus-within,
 .modal-products-form-field--red:hover {
@@ -317,5 +318,6 @@
   outline-color: $button-hover;
 }
 .modal-products-form-field--red:not(:placeholder-shown):required:invalid {
-  outline-color: red;
+  outline-color: rgb(243, 94, 94);
+  background-color: rgba(232, 173, 173, 0.15);
 }
