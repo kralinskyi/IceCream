@@ -99,14 +99,17 @@
 }
 
 .products__link {
-  display: contents;
-
+  border: none;
+  background-color: transparent;
   @include transition(fill);
+}
 
-  &:hover,
-  &:focus {
-    fill: $white-color;
-  }
+.products__item--yellow:hover .products__link--yellow.products__link,
+.products__item--red:hover .products__link--red.products__link,
+.products__item--green:hover .products__link--green.products__link,
+.products__link:focus {
+  fill: $white-color;
+  outline: none;
 }
 
 .products__item {
@@ -282,14 +285,23 @@
 }
 
 .products__text {
+  //display: block;
+  // width: 242px;
+  height: 142px;
+  margin-bottom: 58px;
+
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 176%;
+  line-height: calc(25 / 14);
 
   text-align: center;
   letter-spacing: 0.04em;
 
   color: $dark-color;
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(28 / 16);
+  }
 }
