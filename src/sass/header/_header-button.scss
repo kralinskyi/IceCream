@@ -16,7 +16,7 @@
   cursor: pointer;
 
   @include transition(background-color);
-  @include transition();
+  // @include transition();
 
   &:hover {
     color: $black-color;
