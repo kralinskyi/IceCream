@@ -66,7 +66,6 @@
   font-weight: 400;
   font-size: 26px;
   line-height: 1.26;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
 
   color: $white-color;
@@ -113,12 +112,10 @@
 
 .hero__inform--sum {
   @media screen and (min-width: 768px) {
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 900;
     font-size: 28px;
     line-height: 1.21;
-    letter-spacing: 0.04em;
 
     color: $dark-color;
 
@@ -132,7 +129,6 @@
 
 .hero__inform--kind {
   @media screen and (min-width: 768px) {
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 8px;
@@ -166,7 +162,6 @@
   display: flex;
   align-items: center;
   text-align: center;
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -216,7 +211,6 @@
   padding-top: 9px;
   padding-bottom: 9px;
 
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -269,7 +263,7 @@
     margin-left: 241px;
   }
 
-  animation: bottom-to-top 1000ms ease 200ms both;
+  animation: bottom-to-top 1000ms ease 800ms both;
 }
 
 .hero__item {
@@ -277,7 +271,6 @@
   padding: 0;
   width: 150px;
   font-weight: 400;
-  font-family: 'Montserrat';
   font-size: 12px;
   line-height: 1.42;
   color: $white-color;
@@ -306,4 +299,7 @@
   &:focus {
     color: $button-default;
   }
+
+  @include transition();
 }
+  
