@@ -1,60 +1,92 @@
 <div class="modal-hero modal" data-modal="1">
-    <button  type="button" class="modal__btn-close js-modal-close">
-  <svg class="close-icon" width="24" height="24">
-    <use href="./images/modal-franchise/modal-franchise.svg#icon-close"></use>
-  </svg>
-</button>
+  <button type="button" class="modal__btn-close js-modal-close">
+    <svg class="close-icon" width="24" height="24">
+      <use href="./images/modal-franchise/modal-franchise.svg#icon-close"></use>
+    </svg>
+  </button>
 
-<h2 class="modal__title modal-hero-title">Buy now</h2>
+  <h2 class="modal__title modal-hero-title">Buy now</h2>
 
-<form>
-  <ul class="modal-hero-list list">
-    <li>
-      <label class="modal-hero-label">
-        <input type="checkbox" class="modal-hero-checkbox" name="product" value="ice cream">
+  <form>
+    <ul class="modal-hero-list list">
+      <li>
+        <label class="modal-hero-label">
+          <input
+            type="checkbox"
+            class="modal-hero-checkbox"
+            name="product"
+            value="ice cream"
+          />
           <span class="modal-hero-item">
             <span class="modal-hero-box modal-hero-img1"></span>
             <span class="modal-hero-name">ice cream</span>
           </span>
-      </label>
-    </li>
-    <li>
-      <label class="modal-hero-label">
-        <input type="checkbox" class="modal-hero-checkbox modal-hero-checkbox--yellow" name="product" value="ice coffee" checked>
+        </label>
+      </li>
+      <li>
+        <label class="modal-hero-label">
+          <input
+            type="checkbox"
+            class="modal-hero-checkbox modal-hero-checkbox--yellow"
+            name="product"
+            value="ice coffee"
+          />
           <span class="modal-hero-item modal-hero-item--yellow">
-            <span class="modal-hero-box modal-hero-box--yellow modal-hero-img2"></span>
+            <span
+              class="modal-hero-box modal-hero-box--yellow modal-hero-img2"
+            ></span>
             <span class="modal-hero-name">ice coffee</span>
           </span>
-      </label>
-    </li>
-    <li>
-      <label class="modal-hero-label">
-        <input type="checkbox" class="modal-hero-checkbox modal-hero-checkbox--red" name="product" value="milkshake">
+        </label>
+      </li>
+      <li>
+        <label class="modal-hero-label">
+          <input
+            type="checkbox"
+            class="modal-hero-checkbox modal-hero-checkbox--red"
+            name="product"
+            value="milkshake"
+          />
           <span class="modal-hero-item modal-hero-item--red">
-            <span class="modal-hero-box modal-hero-box--red modal-hero-img3"></span>
+            <span
+              class="modal-hero-box modal-hero-box--red modal-hero-img3"
+            ></span>
             <span class="modal-hero-name">milkshake</span>
           </span>
-      </label>
-    </li>
-  </ul>
-</form>
+        </label>
+      </li>
+    </ul>
+  </form>
 
   <form name="modal-hero_form" class="modal-hero-form-group">
     <label>
-      <input class="modal-hero-form-field input" placeholder="Name" name="user_name" type="text" required  title="Name from 3 characters" pattern="^([a-zA-Z]{3,15}[ ]*)+"/>
+      <input
+        class="modal-hero-form-field input"
+        placeholder="Name"
+        name="user_name"
+        type="text"
+        required
+        title="Name/surname from 3 characters"
+        pattern="^([a-zA-Z]{3,15}[ ]*)+"
+      />
     </label>
     <label>
-      <input class="modal-hero-form-field phone input" placeholder="Phone" name="user_tel" type="tel" required/>
+      <input
+        class="modal-hero-form-field phone input"
+        placeholder="Phone"
+        name="user_tel"
+        type="tel"
+        required
+      />
     </label>
     <label>
       <textarea
         class="modal-hero-form-field modal-hero-form-message input"
         placeholder="Comment"
-        rows="7" required
+        rows="7"
+        required
       ></textarea>
     </label>
-    <button class="modal-hero-form-button" type="submit">
-      Submit
-    </button>
+    <button class="modal-hero-form-button" type="submit">Submit</button>
   </form>
 </div>
