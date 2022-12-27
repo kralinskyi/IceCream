@@ -171,10 +171,12 @@
 
   border: 2px solid $button-default;
   border-radius: 8px;
-
+  border-color: $button-default;
   background-color: $main-color;
 
   padding: 9px 24px;
+  @include transition();
+  @include transition(border-color);
 
   cursor: url(../images/cursor.svg) 15 15, auto;
 
@@ -199,8 +201,8 @@
     border-color: $button-hover;
   }
 
-  @include transition(border-color);
-  @include transition();
+  // @include transition(border-color);
+  // @include transition();
 }
 
 .hero__button--made-link {
