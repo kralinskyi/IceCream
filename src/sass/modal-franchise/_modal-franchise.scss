@@ -9,6 +9,9 @@
     padding: 32px 40px;
     max-height: 668px;
   }
+  @media screen and (min-width: 1200px) {
+    overflow-y: hidden;
+  }
 }
 
 .modal-franchise__descr {
