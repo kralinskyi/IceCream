@@ -59,10 +59,10 @@
     background-position: 0 -7px;
 
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url('../images/modal-products/img@2x.png');
-  }
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/modal-products/img@2x.png');
+    }
   }
 
   &--red {
@@ -79,10 +79,10 @@
     background-position: 0 -7px;
 
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url('../images/modal-products/img@2x.png');
-  }
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/modal-products/img@2x.png');
+    }
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -320,11 +320,11 @@
 }
 .modal-products-form-field--yellow:focus-within,
 .modal-products-form-field--yellow:hover {
-  outline-color: #edc236;
+  outline-color: #d8ae21;
 }
 
 .modal-products-form-field--yellow:not(:placeholder-shown):required:valid {
-  outline-color: $button-hover;
+  border-color: #e3b82a;
 }
 .modal-products-form-field--yellow:not(:placeholder-shown):required:invalid {
   outline-color: rgb(243, 94, 94);
@@ -332,13 +332,13 @@
 }
 .modal-products-form-field--red:focus-within,
 .modal-products-form-field--red:hover {
-  outline-color: #d66625;
+  outline-color: #d06a2f;
 }
 
 .modal-products-form-field--red:not(:placeholder-shown):required:valid {
-  outline-color: $button-hover;
+  border-color: #b45a25;
 }
 .modal-products-form-field--red:not(:placeholder-shown):required:invalid {
-  outline-color: rgb(243, 94, 94);
+  outline-color: rgb(213, 41, 41);
   background-color: rgba(232, 173, 173, 0.15);
 }
