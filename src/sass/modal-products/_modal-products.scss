@@ -41,6 +41,7 @@
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
   background-image: url('../images/modal-products/img@1x.png');
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: 0 -7px;
   border-radius: 50%;
 
@@ -54,7 +55,14 @@
     box-shadow: 0px 5.26027px 19.726px $product2-color;
     background-image: url('../images/modal-products/img@1x.png');
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: 0 -7px;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/modal-products/img@2x.png');
+  }
   }
 
   &--red {
@@ -67,7 +75,20 @@
     box-shadow: 0px 5.26027px 19.726px $product3-color;
     background-image: url('../images/modal-products/img@1x.png');
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: 0 -7px;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/modal-products/img@2x.png');
+  }
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/modal-products/img@2x.png');
   }
 
   @media screen and (min-width: 768px) {
